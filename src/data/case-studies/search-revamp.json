@@ -1,0 +1,532 @@
+{
+  "company": "Flutter UK&I",
+  "title": "Search Revamp",
+  "subtitle": "Before making Search smarter, we needed to make it work.",
+  "cover": {
+    "src": "/images/search-revamp/01.webp",
+    "w": 2000,
+    "h": 1000,
+    "alt": "Search on mobile across Paddy Power, Sky Vegas and Betfair, shown side by side"
+  },
+  "info": [
+    {
+      "label": "My role",
+      "value": "Lead Product Designer, leading the UX design work across three brands"
+    },
+    {
+      "label": "Project scope",
+      "value": "Search and discovery across Paddy Power, Betfair and Sky"
+    },
+    {
+      "label": "Core team",
+      "value": "Product Manager, Product Owner, Engineer and Lead Product Designer"
+    },
+    {
+      "label": "Wider collaborators",
+      "value": "UX Research, Commercial, Brand and Content teams"
+    },
+    {
+      "label": "Project status",
+      "value": "Ongoing, with phased design and development"
+    }
+  ],
+  "sections": [
+    {
+      "id": "challenge",
+      "title": "The Challenge",
+      "blocks": [
+        {
+          "type": "callout",
+          "text": "Before making Search smarter, we needed to make it work.",
+          "note": "Search is a key route to discovering and launching games across Paddy Power, Betfair and Sky Vegas, but the existing experience wasn’t consistently helping players find the right game quickly. The opportunity wasn’t simply to redesign the interface. It was to establish reliable foundations while exploring how Search could support different player needs and brand identities."
+        },
+        {
+          "type": "team",
+          "groups": [
+            {
+              "title": "The existing experience",
+              "people": [
+                "Slow or inconsistent results",
+                "Poor relevance and accuracy",
+                "Different experiences across products",
+                "Little support for browsing without a specific game in mind",
+                "Filtering that wasn’t performing effectively"
+              ]
+            },
+            {
+              "title": "What Search needed to be",
+              "people": [
+                "Fast and dependable",
+                "Relevant and accurate",
+                "Consistent across products",
+                "Helpful for open-ended browsing",
+                "Filtering that works"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "three",
+          "images": [
+            {
+              "src": "/images/search-revamp/02.webp",
+              "w": 354,
+              "h": 599,
+              "alt": "Betfair Search before the redesign",
+              "maxw": "360px"
+            },
+            {
+              "src": "/images/search-revamp/03.webp",
+              "w": 354,
+              "h": 599,
+              "alt": "Sky Vegas Search before the redesign",
+              "maxw": "360px"
+            },
+            {
+              "src": "/images/search-revamp/04.webp",
+              "w": 352,
+              "h": 603,
+              "alt": "Paddy Power Search before the redesign",
+              "maxw": "360px"
+            }
+          ],
+          "caption": "The existing Search experience across Betfair, Sky Vegas and Paddy Power."
+        },
+        {
+          "type": "gallery",
+          "layout": "split",
+          "heading": "Auditing the current experience",
+          "text": "An audit of the live experience captured specific pain points: search wasn’t instant, results only appeared after three letters, and a relevant game, Big Bass 2, didn’t appear in the list.",
+          "images": [
+            {
+              "src": "/images/search-revamp/05.webp",
+              "w": 1006,
+              "h": 2093,
+              "alt": "Audit of the existing Paddy Power search experience with three pain points noted",
+              "zoom": true,
+              "maxw": "480px"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "players",
+      "title": "Understanding How Players Search",
+      "blocks": [
+        {
+          "type": "text",
+          "heading": "Two different needs. One Search experience.",
+          "paragraphs": [
+            "Research and analytics suggested two broad ways players use Search. The design needed to serve both."
+          ]
+        },
+        {
+          "type": "team",
+          "groups": [
+            {
+              "title": "Exploration",
+              "people": [
+                "Players who don’t necessarily know what they’re looking for",
+                "They need help discovering relevant games"
+              ]
+            },
+            {
+              "title": "Recall",
+              "people": [
+                "Players who know the game they want",
+                "They expect to find and launch it quickly"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "facts",
+          "items": [
+            {
+              "value": "55.55%",
+              "label": "of searches resulted in a game launch"
+            },
+            {
+              "value": "15.5%",
+              "label": "of search accounts were early-lifecycle players, who made up only around 3% of all accounts"
+            },
+            {
+              "value": "3 or fewer",
+              "label": "searches: where most successful search-to-launch journeys happened"
+            }
+          ],
+          "highlight": true
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "These are baseline findings from existing analytics, not results of the redesign."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "title": "Starting With People, Not Solutions",
+      "blocks": [
+        {
+          "type": "text",
+          "heading": "March 2026 — Informal cross-functional conversations",
+          "paragraphs": [
+            "I initiated conversations across Product, Development, Data, Content, Design and Commercial to understand how colleagues use Search in everyday life and what they expect from a good search experience.",
+            "These weren’t formal user interviews. They were a way to surface assumptions, challenge internal thinking and bring different perspectives into the discussion."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "March 2026 — User Needs & Wants",
+          "paragraphs": [
+            "Dedicated UX Research then strengthened our understanding of player expectations and informed further design exploration."
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/search-revamp/06.webp",
+              "w": 1700,
+              "h": 1596,
+              "alt": "Selected boards from the informal conversations about how people use search",
+              "zoom": true,
+              "maxw": "1000px"
+            }
+          ],
+          "caption": "Selected boards from the informal conversations: how people use search, and what happens when it lets them down."
+        }
+      ]
+    },
+    {
+      "id": "explore",
+      "title": "Exploring What Search Could Become",
+      "blocks": [
+        {
+          "type": "text",
+          "heading": "Thinking beyond the search bar.",
+          "paragraphs": [
+            "A Product-led ideation workshop in March 2026 explored what a more ambitious discovery experience might look like. It brought together behavioural signals, player needs, technical opportunities and ideas from other digital products."
+          ],
+          "lead": true
+        },
+        {
+          "type": "list",
+          "heading": "Themes that emerged",
+          "items": [
+            "Understanding intent, not only matching keywords",
+            "Richer discovery and game previews",
+            "Dedicated search experiences",
+            "More contextual and personalised recommendations",
+            "Exploratory concepts such as mood-based search"
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "These were opportunities for exploration, not confirmed or delivered functionality. The workshop gave us a broader opportunity space and candidate ideas for further design, prototyping and validation."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foundations",
+      "title": "Establishing the Right Foundations",
+      "blocks": [
+        {
+          "type": "text",
+          "heading": "Fix what matters before changing how it looks.",
+          "paragraphs": [
+            "The initial design direction concentrated on search fundamentals rather than introducing every exploratory feature. A more polished interface wouldn’t fix slow or inaccurate results."
+          ],
+          "lead": true
+        },
+        {
+          "type": "facts",
+          "items": [
+            {
+              "value": "Speed",
+              "label": "Faster, more dependable results"
+            },
+            {
+              "value": "Accuracy",
+              "label": "Relevant matches"
+            },
+            {
+              "value": "Data quality",
+              "label": "Cleaner underlying data"
+            },
+            {
+              "value": "Consistency",
+              "label": "Shared patterns across brands"
+            }
+          ],
+          "cols": 4
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "A phased approach let us introduce improvements progressively and learn before deciding what came next."
+          ]
+        },
+        {
+          "type": "timeline",
+          "phases": [
+            {
+              "kicker": "Phase 1",
+              "title": "Two-tile results",
+              "status": "active",
+              "statusLabel": "Design direction",
+              "summary": "The initial design for search results.",
+              "image": false
+            },
+            {
+              "kicker": "Phase 2",
+              "title": "Three-tile exploration",
+              "status": "planned",
+              "statusLabel": "Exploring",
+              "summary": "A further layout exploration, building on the first phase.",
+              "image": false
+            },
+            {
+              "kicker": "Phase 3",
+              "title": "Filters and richer search",
+              "status": "planned",
+              "statusLabel": "Future discovery",
+              "summary": "Proposed areas for future discovery. Not yet delivered.",
+              "image": false
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Phase one: the intended journey",
+          "paragraphs": [
+            "The intended Search journey for all brands, from pre-search recommendations and recent searches, through typing, to results."
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "three",
+          "images": [
+            {
+              "src": "/images/search-revamp/07.webp",
+              "w": 375,
+              "h": 893,
+              "alt": "Pre-search recommended games, “We think you’ll like”",
+              "zoom": true
+            },
+            {
+              "src": "/images/search-revamp/08.webp",
+              "w": 375,
+              "h": 891,
+              "alt": "Pre-search screen with recent searches and recommended games",
+              "zoom": true
+            },
+            {
+              "src": "/images/search-revamp/09.webp",
+              "w": 375,
+              "h": 891,
+              "alt": "Search results appearing as the player types",
+              "zoom": true
+            },
+            {
+              "src": "/images/search-revamp/10.webp",
+              "w": 375,
+              "h": 891,
+              "alt": "Top results for the search “Big Bass”",
+              "zoom": true
+            },
+            {
+              "src": "/images/search-revamp/11.webp",
+              "w": 750,
+              "h": 1782,
+              "alt": "“Paddy’s Found It!” result for a search for Bigger Bass Bonanza",
+              "zoom": true
+            }
+          ],
+          "caption": "Phase one design: the intended journey for all brands, shown here in Paddy Power’s styling.",
+          "cols": 5
+        },
+        {
+          "type": "text",
+          "heading": "Design direction: evolution, not reinvention",
+          "paragraphs": [
+            "From the outset, I didn’t believe Search needed a complete visual overhaul. The biggest problems weren’t how it looked, but how it worked.",
+            "My approach was to keep things simple: build on existing components and patterns, improve the core experience and avoid introducing complexity where it wasn’t needed.",
+            "We started with a two-tile results layout because it allowed us to use existing game-tile components and move forward without waiting for a completely new system.",
+            "The longer-term direction is a three-tile layout, but rather than jumping straight to the intended end state, we wanted to learn from the initial approach and use that evidence to inform the next iteration."
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "three",
+          "images": [
+            {
+              "src": "/images/search-revamp/12.webp",
+              "w": 750,
+              "h": 1624,
+              "alt": "Wireframe: two-column recommended games before searching",
+              "zoom": true,
+              "cap": "Early wireframe: two-column recommendations."
+            },
+            {
+              "src": "/images/search-revamp/13.webp",
+              "w": 750,
+              "h": 1624,
+              "alt": "Wireframe: three-column search results",
+              "zoom": true,
+              "cap": "Early wireframe: three-column search results."
+            },
+            {
+              "src": "/images/search-revamp/14.webp",
+              "w": 750,
+              "h": 1624,
+              "alt": "Paddy Power pre-search recommendations, “We think you’ll like”, in the two-tile layout",
+              "zoom": true,
+              "cap": "Initial approach: two tiles, reusing established game-tile components."
+            },
+            {
+              "src": "/images/search-revamp/15.webp",
+              "w": 750,
+              "h": 1624,
+              "alt": "Pre-search recommendations, “We think you’ll like”, in the three-tile layout",
+              "zoom": true,
+              "cap": "Intended evolution: three tiles, exploring information density and scanning. A design exploration, not live or tested."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brands",
+      "title": "One Foundation, Three Brands",
+      "blocks": [
+        {
+          "type": "text",
+          "heading": "A shared experience, without losing brand identity.",
+          "paragraphs": [
+            "Working across Paddy Power, Betfair and Sky Vegas meant balancing consistency with individuality.",
+            "The search functionality and core interaction patterns could be shared, but each brand needed to retain its own personality.",
+            "We worked with Brand and Commercial stakeholders throughout the process to understand what mattered to them and where flexibility was needed.",
+            "This included differences in typography, tone of voice, colours and existing game-tile treatments, for example Paddy Power’s distinctive green tile borders."
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "three",
+          "images": [
+            {
+              "src": "/images/search-revamp/16.webp",
+              "w": 750,
+              "h": 1782,
+              "alt": "Betfair Search results screen",
+              "zoom": true
+            },
+            {
+              "src": "/images/search-revamp/17.webp",
+              "w": 750,
+              "h": 1782,
+              "alt": "Sky Vegas Search results screen for “Big Bass”",
+              "zoom": true
+            },
+            {
+              "src": "/images/search-revamp/18.webp",
+              "w": 750,
+              "h": 1782,
+              "alt": "Paddy Power Search results screen with the Paddy’s Found It! module",
+              "zoom": true
+            }
+          ],
+          "caption": "Search across Betfair, Sky Vegas and Paddy Power. Tap an image to enlarge."
+        },
+        {
+          "type": "callout",
+          "text": "“Same foundation. Different eyeshadow.”",
+          "note": "How I described the approach to stakeholders."
+        },
+        {
+          "type": "text",
+          "heading": "Looking beyond visual differences",
+          "paragraphs": [
+            "Working with Data and other teams, we also wanted to understand differences in search behaviour across the brands.",
+            "The ambition is for the shared system to support more relevant, context-aware experiences rather than assuming players across every brand are looking for the same games. The foundations can remain consistent while the experience becomes increasingly relevant to each audience.",
+            "This is an ongoing direction, not a delivered personalisation capability."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "title": "Aligning on the Next Phase",
+      "blocks": [
+        {
+          "type": "text",
+          "heading": "Turning uncertainty into a shared direction.",
+          "paragraphs": [
+            "A later in-person workshop in August brought Product, Design, the Product Owner and Engineering together to work through refreshed GA4 evidence, existing UXR and technical considerations."
+          ],
+          "lead": true
+        },
+        {
+          "type": "gallery",
+          "layout": "two",
+          "images": [
+            {
+              "src": "/images/search-revamp/19.webp",
+              "w": 1800,
+              "h": 1013,
+              "alt": "Product, Design and Engineering working through search and filtering at the in-person workshop",
+              "zoom": true
+            },
+            {
+              "src": "/images/search-revamp/20.webp",
+              "w": 1800,
+              "h": 1013,
+              "alt": "Whiteboard comparing the current and proposed filtering flows",
+              "zoom": true
+            }
+          ],
+          "caption": "Working through search and filtering together at the in-person workshop."
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "One important shift was reframing the filtering question. Rather than deciding only whether filters should appear before or after searching, the team considered how Search and filtering could operate independently while complementing one another.",
+            "The workshop also progressed discovery around promotional eligibility and richer Search capabilities. These remain areas of exploration, not delivered outcomes."
+          ]
+        },
+        {
+          "type": "facts",
+          "items": [
+            {
+              "value": "Shared direction",
+              "label": "Across Product, Design, PO and Engineering"
+            },
+            {
+              "value": "Clearer ownership",
+              "label": "Of the next pieces of work"
+            },
+            {
+              "value": "Next steps",
+              "label": "Concrete, for further validation"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Reflection",
+          "paragraphs": [
+            "The most useful decisions came from balancing ambition with foundational quality, and from bringing the right disciplines into the same room."
+          ]
+        }
+      ]
+    }
+  ],
+  "next": null
+}

@@ -1,0 +1,493 @@
+{
+  "company": "Irish Store",
+  "title": "Responsive Email Design",
+  "subtitle": "From one-size-fits-all emails to a more flexible, customer-focused experience.",
+  "backLabel": "Back to Selected Work",
+  "cover": {
+    "label": "[Add hero image: final email designs, desktop and mobile — PDF p.4]"
+  },
+  "info": [
+    {
+      "label": "My role",
+      "value": "UX Designer, and the sole UX designer on the project"
+    },
+    {
+      "label": "My responsibilities",
+      "value": "Overall strategy, user research, visual design and coding prototypes"
+    },
+    {
+      "label": "Project",
+      "value": "A responsive, reusable email template system"
+    },
+    {
+      "label": "Platform",
+      "value": "Bronto email marketing platform"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Project Overview",
+      "plain": true,
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Email is one of the business’s most effective marketing tools, and one of its most profitable and frequently used ways of engaging with customers."
+          ],
+          "lead": true
+        }
+      ]
+    },
+    {
+      "id": "challenge",
+      "title": "The Challenge",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The company saw a massive increase in new subscribers during 2020 (Covid). The email database grew, but the other KPIs didn’t reflect the increase.",
+            "The original one-size-fits-all approach to email was no longer working for existing users or new ones. We needed a responsive email, and a fresh look at the processes behind producing it."
+          ],
+          "heading": "More subscribers, but not better results"
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "To create more relevant, accessible and consistent email experiences for existing and new subscribers, with the aim of improving retention and conversion. We set these targets at the start:"
+          ],
+          "heading": "The opportunity"
+        },
+        {
+          "type": "facts",
+          "highlight": false,
+          "items": [
+            {
+              "value": "3%",
+              "label": "Target: increase twelve-month retention"
+            },
+            {
+              "value": "4%",
+              "label": "Target: increase lead conversion rate"
+            },
+            {
+              "value": "5%",
+              "label": "Target: increase in new customers vs the previous year"
+            },
+            {
+              "value": "6%",
+              "label": "Target: increase in revenue year on year"
+            },
+            {
+              "value": "Segmentation",
+              "label": "Target: more defined segmentation of emails"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "These were the goals at the start of the project, not results. The reported outcomes are in section 06."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "customer",
+      "title": "Understanding the Customer",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The discovery work drew on internal and external sources: archived email analytics, feedback from help desk tickets, sessions with the Customer Service Manager, and comparative research and best-practice case studies.",
+            "We reviewed four competitors’ marketing emails in detail, and only one of them had a responsive template.",
+            "Reviewing our own emails against best practice showed some things were already working, such as personalised subject lines and content, and S-curve design. It also showed several areas to improve: mobile first, image size, HTML text, segmentation, typography and HTML calls to action."
+          ],
+          "heading": "Listening before designing"
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "We also ran a short survey, split between new and existing subscribers, to understand what could make the email experience more enjoyable."
+          ],
+          "heading": "What subscribers told us"
+        },
+        {
+          "type": "facts",
+          "highlight": true,
+          "items": [
+            {
+              "value": "67%",
+              "label": "of new users said mobile is their favoured device"
+            },
+            {
+              "value": "48%",
+              "label": "of existing users said mobile is their favoured device"
+            },
+            {
+              "value": "47.2%",
+              "label": "of users were happy and satisfied with the overall email experience"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "two",
+          "images": [
+            {
+              "src": "/images/irish-store-email/01.png",
+              "w": 1152,
+              "h": 620,
+              "alt": "Bar chart of device use among new users: mobile is highest, ahead of desktop or laptop and tablets",
+              "cap": "New users: mobile is the clear favourite, at 67%.",
+              "zoom": true,
+              "maxw": "min(100%, 576px)",
+              "tag": "New users"
+            },
+            {
+              "src": "/images/irish-store-email/02.png",
+              "w": 1152,
+              "h": 620,
+              "alt": "Bar chart of device use among existing users: mobile leads, with desktop or laptop close behind, and tablets lower",
+              "cap": "Existing users: mobile leads at 48%, with desktop or laptop close behind.",
+              "zoom": true,
+              "maxw": "min(100%, 576px)",
+              "tag": "Existing users"
+            }
+          ]
+        },
+        {
+          "type": "findings",
+          "items": [
+            {
+              "title": "New subscribers",
+              "why": "Too many emails, and confusion about which promotion was live.",
+              "points": []
+            },
+            {
+              "title": "Existing subscribers",
+              "why": "Happy with the number of emails, and wanted more brand and blog content.",
+              "points": []
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Where the experience fell short",
+          "items": [
+            "Images were slow to load",
+            "Information was too small to find on mobile",
+            "There was no easy way to copy a promo code",
+            "Email-only promotions left people confused about the journey on the website, which pointed to the need for landing pages"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "direction",
+      "title": "Defining the Direction",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "To narrow down what was crucial for both the business and customers, we plotted possible features on a graph of priority against effort. The session involved the E-commerce Manager, the Digital Marketing Manager and the Product Manager.",
+            "The list covered UGC content, social icons, segmentation, personalised subject lines, brand emails, CTA colour, links, responsive design, HTML/CSS-based emails, landing pages, personalisation within the email and image sizes."
+          ],
+          "heading": "Turning findings into priorities"
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "label": "[Add prioritisation matrix — PDF p.3]",
+              "ratio": "4 / 3"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Bronto is the marketing platform the business uses for email promotions and automation. It came with an email builder, but the business wasn’t using it, and during discovery we found it wasn’t fit for purpose.",
+            "Given those limitations, we chose to create separate desktop and mobile templates, coded in HTML and CSS."
+          ],
+          "heading": "Working around the email builder"
+        }
+      ]
+    },
+    {
+      "id": "system",
+      "title": "Designing a Flexible Email System",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The email needed to serve the full range of campaign scenarios, with variations in both content and hierarchy."
+          ],
+          "lead": true
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "The main content area was built from pre-built structural components. Each one stands on its own, and they can be assembled in different combinations to suit the campaign and the audience."
+          ],
+          "heading": "Components that can be combined"
+        },
+        {
+          "type": "facts",
+          "highlight": false,
+          "items": [
+            {
+              "value": "Hero",
+              "label": "Component A"
+            },
+            {
+              "value": "Product",
+              "label": "Component B"
+            },
+            {
+              "value": "Information",
+              "label": "Component C"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/irish-store-email/03.webp",
+              "w": 837,
+              "h": 801,
+              "alt": "Diagram of the email structure with the main content area divided into hero, product and information zones",
+              "cap": "The email structure, with the main content area divided into Hero, Product and Information zones.",
+              "zoom": false,
+              "maxw": "min(100%, 560px)"
+            },
+            {
+              "src": "/images/irish-store-email/04.webp",
+              "w": 2001,
+              "h": 636,
+              "alt": "Component A: hero layout variations in the email component library",
+              "cap": "Component A: Hero. Layout variations for the lead image and message.",
+              "zoom": true
+            },
+            {
+              "src": "/images/irish-store-email/05.webp",
+              "w": 2001,
+              "h": 789,
+              "alt": "Component B: product layouts in the email component library, including grid and alternating arrangements",
+              "cap": "Component B: Product. Product blocks in grid and alternating arrangements.",
+              "zoom": true
+            },
+            {
+              "src": "/images/irish-store-email/06.webp",
+              "w": 2001,
+              "h": 636,
+              "alt": "Component C: information layouts in the email component library, including text-led service messages",
+              "cap": "Component C: Information. Text-led blocks for service messages and sign-offs.",
+              "zoom": true
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "two",
+          "images": [
+            {
+              "src": "/images/irish-store-email/07.png",
+              "w": 600,
+              "h": 912,
+              "alt": "Desktop email layout using the information component, with placeholder content",
+              "cap": "Desktop: the Information component in a 600px layout, shown with placeholder content.",
+              "zoom": false,
+              "maxw": "min(100%, 420px)",
+              "tag": "Desktop"
+            },
+            {
+              "src": "/images/irish-store-email/08.png",
+              "w": 320,
+              "h": 859,
+              "alt": "The same email layout on mobile at 320px, with placeholder content",
+              "cap": "Mobile: the same email at 320px.",
+              "zoom": false,
+              "maxw": "min(100%, 224px)",
+              "tag": "Mobile"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "The templates had to fit into how people use their phones, so emails needed to be easy to use on both mobile and desktop.",
+            "Working within the brand guidelines, a set of visual styles was defined for the main components, bringing the look and feel of the brand into the email layouts."
+          ],
+          "heading": "Designed for the inbox"
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/irish-store-email/09.webp",
+              "w": 1165,
+              "h": 841,
+              "alt": "Brand colour palette and typography defined for the email templates",
+              "cap": "The brand colour palette and typography, defined for the email components.",
+              "zoom": true,
+              "maxw": "min(100%, 900px)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "The original template used a table grid as the body of the code to hold the content. For mobile, this was expanded with the changes needed to make it mobile friendly. The desktop and iPad header is 600px wide, and the mobile header is 320px."
+          ],
+          "heading": "Built in code"
+        },
+        {
+          "type": "gallery",
+          "layout": "two",
+          "images": [
+            {
+              "src": "/images/irish-store-email/10.png",
+              "w": 600,
+              "h": 1352,
+              "alt": "The desktop email grid, 600px wide, shown as striped columns over a layout",
+              "cap": "Desktop grid: the 600px table structure that holds the content.",
+              "zoom": false,
+              "maxw": "min(100%, 360px)",
+              "tag": "Desktop grid"
+            },
+            {
+              "src": "/images/irish-store-email/11.png",
+              "w": 320,
+              "h": 1871,
+              "alt": "The mobile email grid, 320px wide, shown as striped columns over a layout",
+              "cap": "Mobile grid: the 320px version, adapted to be mobile friendly.",
+              "zoom": false,
+              "maxw": "min(100%, 192px)",
+              "tag": "Mobile grid"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "heading": "Desktop and iPad header: 600px (from the template)",
+          "code": "<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"\n  class=\"wf\" style=\"margin:0 auto; max-width: 600px; width: 600px;\">\n  <tbody>\n    <tr>\n      <td align=\"center\" class=\"wf\" style=\"margin:0; padding:0;\">\n        <a href=\"https://www.theirishstore.com\" target=\"_blank\">\n          <img border=\"0\" class=\"wf\" height=\"auto\"\n            src=\"img/The-Irish-Store-Header-Logo.png\"></a>\n      </td>\n    </tr>\n  </tbody>\n</table>"
+        },
+        {
+          "type": "code",
+          "heading": "Global colour styles (excerpt)",
+          "code": ".header-color { background-color: #a9b089; }\n.primary-color { color: #252c26; }\n.accent-red { color: #9a1a28; }\n.accent-grey { color: #e0e1dd; }"
+        }
+      ]
+    },
+    {
+      "id": "testing",
+      "title": "Testing & Optimisation",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Once the code was compiled into production-ready blocks, the templates were tested on a range of email providers, including Outlook, Gmail and Yahoo, and in the native mail apps on iOS and Android."
+          ],
+          "heading": "Across inboxes and devices"
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "label": "[Add email client previews, desktop and mobile — PDF p.5]",
+              "ratio": "16 / 9"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Throughout the project, A/B testing covered small best-practice changes as well as overall template updates."
+          ],
+          "heading": "Experiments along the way"
+        },
+        {
+          "type": "findings",
+          "items": [
+            {
+              "title": "Responsive vs non-responsive",
+              "why": "Click rate increased with the responsive template.",
+              "points": []
+            },
+            {
+              "title": "HTML vs image call to action",
+              "why": "A heatmap review showed higher engagement with the HTML call to action.",
+              "points": []
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "For an email-only promotion, one group of users was sent to a landing page with the information from the email, while the other group went to the homepage, which had a general hero banner.",
+            "Reviewing the data in Hotjar and Google Analytics, the landing page gave customers the better experience. For future email-only promotions, the landing page was used for all email users, which led to a decrease in customer service queries."
+          ],
+          "heading": "Thinking beyond the email"
+        }
+      ]
+    },
+    {
+      "id": "impact",
+      "title": "Impact & Learnings",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "These are the outcomes reported during the project period. Plenty of things influence numbers like these, so they shouldn’t be read as the email work alone causing every change. For reference, the original targets were 3%, 4%, 5% and 6%."
+          ],
+          "heading": "Reported results"
+        },
+        {
+          "type": "facts",
+          "highlight": true,
+          "items": [
+            {
+              "value": "5%",
+              "label": "increase in twelve-month retention"
+            },
+            {
+              "value": "4.2%",
+              "label": "increase in lead conversion rate"
+            },
+            {
+              "value": "5%",
+              "label": "increase in new customers, year on year"
+            },
+            {
+              "value": "5.9%",
+              "label": "increase in revenue, year on year"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "The new segmentation helped the business collect data on individual groups and target them more effectively, which also meant fewer emails were sent to customers.",
+            "There was a slight decrease in average order value compared with the previous year, as the business ran more aggressive promotions."
+          ],
+          "heading": "Beyond the numbers"
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Three things stand out: design flexible systems rather than one-off emails, test your assumptions, and think about the whole customer journey, not just the inbox."
+          ],
+          "heading": "What I took from it",
+          "lead": true
+        }
+      ]
+    }
+  ],
+  "next": null
+}

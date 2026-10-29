@@ -1,0 +1,574 @@
+/* Case study template. Accent (--rgb) is set on .cs from the project's company. */
+.cs {
+  padding-bottom: clamp(64px, 9vw, 120px);
+}
+
+/* Header */
+.back {
+  margin-top: clamp(16px, 3vw, 32px);
+  font-size: 15px;
+}
+.cs-co {
+  margin-top: clamp(32px, 5vw, 64px);
+}
+.cs-title {
+  margin: 20px 0 0;
+  font-weight: 700;
+  font-size: clamp(40px, 6vw, 88px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+.cs-sub {
+  margin: 24px 0 0;
+  max-width: 760px;
+  font-size: clamp(18px, 1.9vw, 24px);
+  line-height: 1.45;
+  color: var(--body);
+}
+.cs-cover {
+  margin-top: clamp(40px, 5vw, 64px);
+}
+.cs-rule {
+  margin-top: clamp(32px, 4vw, 48px);
+  margin-bottom: 0;
+}
+.cs-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: 28px 32px;
+  margin-top: clamp(32px, 4vw, 48px);
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.cs-il {
+  font-size: 13px;
+  color: var(--body);
+  margin: 0 0 6px;
+}
+.cs-iv {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Image frame / placeholder */
+.ph {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--surface);
+  color: var(--body);
+  font-size: 14px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.ph img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ph-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--bg);
+  padding: 3px 9px;
+  border-radius: 6px;
+}
+
+/* Lightbox (no JS: a <details> that goes full-screen when open) */
+.ph details {
+  position: absolute;
+  inset: 0;
+}
+.ph summary {
+  position: absolute;
+  inset: 0;
+  display: block;
+  list-style: none;
+  cursor: zoom-in;
+}
+.ph summary::-webkit-details-marker {
+  display: none;
+}
+.ph summary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: -2px;
+}
+.lb-x {
+  display: none;
+}
+.lb[open] summary {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(17, 28, 36, 0.92);
+  cursor: zoom-out;
+}
+.lb[open] summary img {
+  position: static;
+  width: auto;
+  height: auto;
+  max-width: 94vw;
+  max-height: 88vh;
+}
+.lb[open] .lb-x {
+  display: block;
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Sections */
+.cs-sec {
+  border-top: 1px solid var(--line);
+  margin-top: clamp(64px, 9vw, 120px);
+  padding-top: 20px;
+}
+.cs-sh {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  margin-bottom: clamp(32px, 4vw, 56px);
+}
+.cs-n {
+  font-size: 15px;
+  color: var(--body);
+}
+.cs-h {
+  margin: 0;
+  font-weight: 700;
+  font-size: clamp(28px, 3.4vw, 48px);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+.cs-b {
+  margin-bottom: clamp(40px, 5vw, 72px);
+}
+.cs-b:last-child {
+  margin-bottom: 0;
+}
+
+/* Text and lists */
+.rd {
+  max-width: var(--read);
+}
+.rd h3,
+.gal-t h4 {
+  margin: 0 0 16px;
+  font-size: clamp(20px, 1.8vw, 24px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.rd p,
+.rd li,
+.gal-t p {
+  font-size: clamp(16px, 1.3vw, 18px);
+  line-height: 1.6;
+  color: var(--body);
+}
+.rd p,
+.gal-t p {
+  margin: 0 0 20px;
+}
+.rd ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.rd li {
+  margin-bottom: 10px;
+}
+.rd.lead {
+  max-width: 900px;
+}
+.rd.lead p {
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.4;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 24px;
+}
+.cards-h {
+  margin: 0 0 24px;
+  font-size: clamp(20px, 1.8vw, 24px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.card2 {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.card2 h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.card2 p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--body);
+}
+
+/* Callout */
+.callout {
+  max-width: 1000px;
+}
+.callout-r {
+  width: 48px;
+  height: 6px;
+  border-radius: 3px;
+  background: rgb(var(--rgb));
+  margin-bottom: 24px;
+}
+.callout-t {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+.callout-n {
+  margin: 20px 0 0;
+  max-width: var(--read);
+  font-size: clamp(16px, 1.3vw, 18px);
+  line-height: 1.6;
+  color: var(--body);
+}
+
+/* Facts */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: 32px;
+}
+.facts.f4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(16px, 2.5vw, 32px);
+}
+.facts.f4 .fact-v {
+  font-size: clamp(20px, 2.4vw, 34px);
+}
+.fact {
+  border-top: 2px solid var(--ink);
+  padding-top: 16px;
+}
+.fact-v {
+  margin: 0 0 8px;
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+.fact-v.ph-v {
+  color: var(--muted);
+}
+.fact-v.hl-v {
+  display: inline-block;
+  padding: 0.04em 0.2em;
+  border-radius: 8px;
+  background: rgb(var(--rgb));
+}
+.fact-l {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--body);
+}
+
+/* Team / two-column lists */
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 40px clamp(24px, 4vw, 64px);
+}
+.team h4 {
+  margin: 0 0 16px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--body);
+}
+.team ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.team li {
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  font-size: clamp(17px, 1.6vw, 20px);
+  font-weight: 500;
+}
+.team li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+/* Timeline */
+.tl-leg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 0 0 36px;
+  font-size: 13px;
+  color: var(--body);
+}
+.lg {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.lg i,
+.tl-i::before {
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: var(--bg);
+}
+.lg i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+.lg-done i,
+.st-done::before {
+  background: var(--ink);
+}
+.lg-active i,
+.st-active::before {
+  background: rgb(var(--rgb));
+  border-color: rgb(var(--rgb));
+}
+.lg-planned i,
+.st-planned::before {
+  border-style: dashed;
+}
+.lg-tbd i,
+.st-tbd::before {
+  border-style: dotted;
+  border-color: var(--muted);
+}
+.tl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 48px 24px;
+}
+.tl-i {
+  position: relative;
+  padding-top: 28px;
+  border-top: 2px solid var(--line);
+}
+.tl-i::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 0;
+}
+.tl-k {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: var(--body);
+}
+.tl-t {
+  margin: 0 0 12px;
+  font-size: clamp(20px, 1.8vw, 24px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.tl-s {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--surface);
+  font-size: 12px;
+  font-weight: 600;
+}
+.st-active .tl-s {
+  background: rgb(var(--rgb));
+}
+.tl-p {
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--body);
+}
+.tl-d {
+  margin: 20px 0 0;
+}
+.tl-d dt {
+  margin: 0 0 2px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--body);
+}
+.tl-d dd {
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--body);
+}
+
+/* Findings */
+.fnd-r {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 20px clamp(24px, 5vw, 80px);
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+.fnd-r:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.fnd-h h4 {
+  margin: 0 0 10px;
+  font-size: clamp(20px, 1.8vw, 24px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.fnd-h p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--body);
+}
+.fnd-r ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.fnd-r li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--body);
+}
+
+/* Code */
+.code-w {
+  max-width: var(--read);
+}
+.code-l {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--body);
+}
+.code {
+  margin: 0;
+  padding: 20px 24px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  font: 13px/1.65 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* Galleries */
+.gal {
+  margin: 0;
+}
+.gal-i {
+  display: grid;
+  gap: clamp(12px, 2vw, 24px);
+  grid-template-columns: 1fr;
+}
+.l-two .gal-i,
+.l-ba .gal-i {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}
+.l-three .gal-i {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+}
+.l-devices .gal-i {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 200px));
+  justify-content: center;
+}
+.l-devices .ph {
+  border-radius: 28px;
+}
+.l-split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: clamp(24px, 4vw, 64px);
+  align-items: center;
+}
+.l-offset .gal-i {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.l-offset .fg:first-child {
+  flex: 7 1 340px;
+}
+.l-offset .fg:last-child {
+  flex: 5 1 240px;
+}
+.gal.g5 .gal-i {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(10px, 1.5vw, 20px);
+}
+.gal-t {
+  max-width: var(--read);
+}
+.gal:not(.l-split) .gal-t {
+  margin-bottom: 28px;
+}
+.fg {
+  min-width: 0;
+}
+.cap {
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: var(--body);
+}
+
+/* Next project */
+.cs-next {
+  margin-top: clamp(64px, 9vw, 120px);
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+.cs-next-l {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: var(--body);
+}
+.nx {
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  min-height: 44px;
+}
+
+@media (max-width: 640px) {
+  .gal.g5 .gal-i,
+  .facts.f4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

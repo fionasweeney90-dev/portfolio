@@ -1,0 +1,132 @@
+---
+import Shot from './Shot.astro';
+import { galleryRatio, type Block } from '../../data/case-study';
+
+interface Props {
+  block: Block;
+}
+
+const { block: b } = Astro.props;
+const statusLabels = { done: 'Completed', active: 'In progress', planned: 'Planned', tbd: 'Status to confirm' };
+---
+<div class="cs-b">
+  {b.type === 'text' && (
+    <div class:list={['rd', { lead: b.lead }]}>
+      {b.heading && <h3>{b.heading}</h3>}
+      {b.paragraphs.map((t) => <p>{t}</p>)}
+    </div>
+  )}
+
+  {b.type === 'list' && (
+    <div class="rd">
+      {b.heading && <h3>{b.heading}</h3>}
+      <ul>{b.items.map((t) => <li>{t}</li>)}</ul>
+    </div>
+  )}
+
+  {b.type === 'cards' && (
+    <div>
+      {b.heading && <h3 class="cards-h">{b.heading}</h3>}
+      <div class="cards">
+        {b.items.map((c) => (
+          <div class="card2"><h4>{c.title}</h4><p>{c.text}</p></div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {b.type === 'callout' && (
+    <div class="callout">
+      <div class="callout-r"></div>
+      <p class="callout-t">{b.text}</p>
+      {b.note && <p class="callout-n">{b.note}</p>}
+    </div>
+  )}
+
+  {b.type === 'facts' && (
+    <div class:list={['facts', { f4: b.cols === 4 }]}>
+      {b.items.map((f) => (
+        <div class="fact">
+          <p class:list={['fact-v', { 'ph-v': String(f.value).startsWith('['), 'hl-v': b.highlight || f.hl }]}>{f.value}</p>
+          <p class="fact-l">{f.label}</p>
+        </div>
+      ))}
+    </div>
+  )}
+
+  {b.type === 'team' && (
+    <div class="team">
+      {b.groups.map((g) => (
+        <div>
+          <h4>{g.title}</h4>
+          <ul>{g.people.map((t) => <li>{t}</li>)}</ul>
+        </div>
+      ))}
+    </div>
+  )}
+
+  {b.type === 'timeline' && (
+    <div>
+      <div class="tl-leg">
+        <span class="lg lg-done"><i></i>Completed</span>
+        <span class="lg lg-active"><i></i>In progress</span>
+        <span class="lg lg-planned"><i></i>Planned</span>
+        <span class="lg lg-tbd"><i></i>Status to confirm</span>
+      </div>
+      <div class="tl">
+        {b.phases.map((ph) => {
+          const status = ph.status ?? 'tbd';
+          return (
+            <div class:list={['tl-i', `st-${status}`]}>
+              <p class="tl-k">{ph.kicker}</p>
+              <h3 class="tl-t">{ph.title}</h3>
+              <span class="tl-s">{ph.statusLabel ?? statusLabels[status]}</span>
+              <p class="tl-p">{ph.summary}</p>
+              {ph.image !== false && <Shot shot={ph.image ?? { label: '[Add screenshot]' }} ratio="4 / 3" />}
+              {ph.details && ph.details.length > 0 && (
+                <dl class="tl-d">
+                  {ph.details.map((d) => (<><dt>{d.k}</dt><dd>{d.v}</dd></>))}
+                </dl>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  )}
+
+  {b.type === 'findings' && (
+    <div>
+      {b.items.map((f) => (
+        <div class="fnd-r">
+          <div class="fnd-h"><h4>{f.title}</h4><p>{f.why}</p></div>
+          {f.points.length > 0 && <ul>{f.points.map((pt) => <li>{pt}</li>)}</ul>}
+        </div>
+      ))}
+    </div>
+  )}
+
+  {b.type === 'code' && (
+    <div class="code-w">
+      {b.heading && <p class="code-l">{b.heading}</p>}
+      <pre class="code">{b.code}</pre>
+    </div>
+  )}
+
+  {b.type === 'gallery' && (
+    <figure class:list={['gal', `l-${b.layout}`, { g5: b.cols === 5 }]}>
+      {b.text && (
+        <div class="gal-t"><h4>{b.heading}</h4><p>{b.text}</p></div>
+      )}
+      <div class="gal-i">
+        {b.images.map((im) => (
+          <div class="fg">
+            <Shot shot={im} ratio={galleryRatio(b.layout)} maxWidth />
+            {im.cap && <p class="cap">{im.cap}</p>}
+          </div>
+        ))}
+      </div>
+      {b.caption && <figcaption class="cap">{b.caption}</figcaption>}
+    </figure>
+  )}
+</div>

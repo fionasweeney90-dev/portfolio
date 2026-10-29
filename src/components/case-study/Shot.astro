@@ -1,0 +1,31 @@
+---
+// An image frame: the image (optionally zoomable into a lightbox) or a labelled placeholder.
+import { url } from '../../lib/site';
+import { shotRatio, type Shot } from '../../data/case-study';
+
+interface Props {
+  shot: Shot;
+  ratio: string;
+  // Frames inside galleries honour per-image max widths; covers and timeline images fill their column.
+  maxWidth?: boolean;
+  class?: string;
+  style?: string;
+}
+
+const { shot, ratio, maxWidth = false, class: cls, style: extra } = Astro.props;
+const style = [`aspect-ratio: ${shotRatio(shot, ratio)}`, maxWidth && shot.maxw ? `max-width: ${shot.maxw}` : '', extra]
+  .filter(Boolean)
+  .join('; ');
+const src = shot.src ? url(shot.src) : undefined;
+const alt = shot.alt ?? '';
+---
+<div class:list={['ph', cls]} style={style}>
+  {src && shot.zoom && (
+    <details class="lb">
+      <summary aria-label="View larger"><img src={src} alt={alt} loading="lazy" /><span class="lb-x">Close</span></summary>
+    </details>
+  )}
+  {src && !shot.zoom && <img src={src} alt={alt} loading="lazy" />}
+  {!src && <span>{shot.label ?? '[Add image]'}</span>}
+  {shot.tag && <span class="ph-tag">{shot.tag}</span>}
+</div>

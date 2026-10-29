@@ -1,0 +1,178 @@
+---
+import Icon from './Icon.astro';
+import { accentFor, url } from '../lib/site';
+import type { ProjectCard } from '../data/projects';
+
+interface Props {
+  project: ProjectCard;
+}
+
+const { project: p } = Astro.props;
+---
+<a class:list={['card', `tier-${p.tier}`, `acc-${accentFor(p.company)}`]} href={url(`/work/${p.slug}/`)}>
+  <div class="media">
+    <div class="img">
+      {p.image ? <img src={url(p.image)} alt="" /> : <span>[{p.title} cover image]</span>}
+    </div>
+    <div class="ov">
+      <span class="ov-in">
+        <span class="ov-t">{p.title}</span>
+        <span class="ov-s">{p.tagline}</span>
+        <Icon name="arrow-up-right" size={18} />
+      </span>
+    </div>
+  </div>
+  <div class="meta">
+    <span class="co">{p.company}</span>
+    <h3 class="ct">{p.title}</h3>
+    <p class="cd">{p.description}</p>
+    <p class="tg">{p.tags}</p>
+  </div>
+</a>
+
+<style>
+  .card {
+    display: block;
+    min-width: 0;
+    color: var(--ink);
+    border-radius: var(--radius);
+  }
+  .card:hover {
+    color: var(--ink);
+  }
+  .card:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 6px;
+  }
+  .tier-featured,
+  .tier-secondary {
+    grid-column: 1 / -1;
+  }
+  .media {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    aspect-ratio: 2 / 1;
+    min-height: 300px;
+    /* An explicit width stops min-height + aspect-ratio pushing the card wider than a phone. */
+    width: 100%;
+  }
+  .tier-secondary .media {
+    aspect-ratio: 21 / 9;
+    min-height: 240px;
+  }
+  .tier-support .media {
+    aspect-ratio: 16 / 10;
+    min-height: 0;
+  }
+  .img {
+    position: absolute;
+    inset: 0;
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--body);
+    font-size: 14px;
+    transition: transform 0.5s ease;
+  }
+  .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  .ov {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    background: rgb(var(--rgb) / 0.94);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .ov-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 640px;
+    opacity: 0;
+    transition: opacity 0.35s ease 0.08s;
+  }
+  .ov-t {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    font-size: clamp(24px, 2.6vw, 40px);
+  }
+  .tier-secondary .ov-t {
+    font-size: clamp(22px, 2.2vw, 34px);
+  }
+  .tier-support .ov-t {
+    font-size: clamp(20px, 1.8vw, 28px);
+  }
+  .ov-s {
+    font-size: clamp(15px, 1.2vw, 18px);
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  @media (hover: hover) {
+    .card:hover .ov,
+    .card:hover .ov-in {
+      opacity: 1;
+    }
+    .card:hover .img {
+      transform: scale(1.03);
+    }
+  }
+  .card:focus-visible .ov,
+  .card:focus-visible .ov-in {
+    opacity: 1;
+  }
+  .card:focus-visible .img {
+    transform: scale(1.03);
+  }
+  .meta {
+    margin-top: 20px;
+  }
+  .ct {
+    margin: 14px 0 8px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    font-size: clamp(20px, 1.7vw, 24px);
+  }
+  .tier-featured .ct {
+    font-size: clamp(26px, 2.6vw, 36px);
+  }
+  .tier-secondary .ct {
+    font-size: clamp(22px, 2.1vw, 28px);
+  }
+  .cd {
+    margin: 0;
+    max-width: 640px;
+    font-size: clamp(15px, 1.2vw, 16px);
+    line-height: 1.55;
+    color: var(--body);
+  }
+  .tg {
+    margin: 10px 0 0;
+    font-size: 13px;
+    color: var(--body);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .img,
+    .ov,
+    .ov-in {
+      transition: none;
+    }
+    .card:hover .img,
+    .card:focus-visible .img {
+      transform: none;
+    }
+  }
+</style>

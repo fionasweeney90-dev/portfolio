@@ -1,0 +1,672 @@
+{
+  "company": "PokerStars",
+  "title": "Payments Experience",
+  "subtitle": "Two payments projects: helping players find their transactions, and giving them more control over their saved payment methods.",
+  "backLabel": "Back to Selected Work",
+  "cover": {
+    "label": "[Add cover image]"
+  },
+  "info": [
+    {
+      "label": "My role",
+      "value": "Senior UX Designer, on both projects"
+    },
+    {
+      "label": "Transaction History",
+      "value": "Hands-on design · six weeks"
+    },
+    {
+      "label": "Payment Method Management",
+      "value": "Design direction and mentoring · four months · not launched"
+    },
+    {
+      "label": "Platforms",
+      "value": "Desktop and mobile"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "plain": true,
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Two payments projects that show two sides of my Senior UX Designer role: hands-on, evidence-led decisions in one, and design direction, alignment and mentoring in the other."
+          ],
+          "lead": true
+        }
+      ]
+    },
+    {
+      "id": "th",
+      "title": "Project 1 — Transaction History",
+      "plain": true,
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "When I joined PokerStars, my first major project was in the Payments area, focused on Transaction History: redesigning filters to improve discoverability and reduce player friction."
+          ],
+          "lead": true
+        },
+        {
+          "type": "facts",
+          "highlight": false,
+          "items": [
+            {
+              "value": "Senior UX Designer",
+              "label": "My role"
+            },
+            {
+              "value": "Six weeks",
+              "label": "Duration"
+            },
+            {
+              "value": "Desktop & mobile",
+              "label": "Platforms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "th-problem",
+      "title": "The Challenge",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Transaction History displayed every transaction in one continuous list, which made it difficult for players to scan or find a specific payment quickly.",
+            "I worked closely with Product, Engineering and UI, and led the UX approach."
+          ],
+          "heading": "A list that was hard to scan"
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/pokerstars-payments/01.webp",
+              "w": 986,
+              "h": 826,
+              "alt": "The existing transaction history inside the Cashier, a dense list of transaction references and amounts",
+              "cap": "The existing transaction history: every transaction in one continuous list.",
+              "zoom": true,
+              "maxw": "min(100%, 900px)"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Goals",
+          "items": [
+            "Help players quickly locate individual or grouped transactions",
+            "Improve transaction visibility and transparency to strengthen trust",
+            "Reduce support tickets and increase user satisfaction"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "th-research",
+      "title": "Understanding Player Pain Points",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "I started by reviewing previous player research and feedback. I then benchmarked filtering systems across competitors and e-commerce sites to identify best practice, and tested early concepts to see which filter ideas felt clearest and quickest to use."
+          ],
+          "heading": "Research before ideas"
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/pokerstars-payments/02.webp",
+              "w": 1134,
+              "h": 688,
+              "alt": "Bar chart titled Overall importance rating, comparing how important players rated filtering by date, filtering by transaction method, exporting history and filtering by status",
+              "cap": "Prior research: how important players rated filtering by date, method and status, and exporting their history.",
+              "zoom": true,
+              "maxw": "min(100%, 760px)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "th-solution",
+      "title": "From Research to Solution",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The insights led to separate filter and sort designs for mobile and desktop, each tailored to the device. I prototyped and tested them in Figma, refining them based on player feedback.",
+            "Testing confirmed that players found the new filters clear, especially the icons and visual cues."
+          ],
+          "heading": "Tailored to each device"
+        }
+      ]
+    },
+    {
+      "id": "th-decision",
+      "title": "Balancing Design and Development",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "During development, Engineering suggested native dropdowns to simplify the build, while our Senior Engineering Architect preferred moving towards a modal design.",
+            "I was open to both perspectives, so I ran additional tests comparing the modal version with the custom filter design."
+          ],
+          "heading": "Two technical approaches"
+        },
+        {
+          "type": "gallery",
+          "layout": "two",
+          "images": [
+            {
+              "src": "/images/pokerstars-payments/03.png",
+              "w": 502,
+              "h": 287,
+              "alt": "Desktop transaction history with filters as dropdowns: sort by, transaction type, payment method and date range",
+              "cap": "Filter system A: dropdown filters apply automatically.",
+              "zoom": false,
+              "maxw": "min(100%, 502px)",
+              "tag": "System A"
+            },
+            {
+              "src": "/images/pokerstars-payments/04.png",
+              "w": 524,
+              "h": 480,
+              "alt": "Desktop filters modal with transaction type, payment method and date range options",
+              "cap": "Filter system B: a popup modal, with a button to apply the filters.",
+              "zoom": false,
+              "maxw": "min(100%, 524px)",
+              "tag": "System B"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Players preferred the custom filters for clarity and ease of use. I shared the findings, along with previous research and best-practice examples, and despite some pushback we aligned on keeping the custom design, balancing UX quality with development needs."
+          ],
+          "heading": "Evidence, not opinion",
+          "lead": true
+        }
+      ]
+    },
+    {
+      "id": "th-final",
+      "title": "The Final Designs",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The final design brought together sorting, filtering by transaction type and payment method, and date options."
+          ],
+          "heading": "Simple, familiar filtering"
+        },
+        {
+          "type": "facts",
+          "highlight": false,
+          "items": [
+            {
+              "value": "Sort by",
+              "label": "Quickly switch between newest and oldest"
+            },
+            {
+              "value": "Transaction type",
+              "label": "Types are custom to the player"
+            },
+            {
+              "value": "Payment method",
+              "label": "A list of all the player’s payment methods"
+            },
+            {
+              "value": "Date range",
+              "label": "Preset options to view recent activity"
+            },
+            {
+              "value": "Select days",
+              "label": "Pick specific days from the calendar"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/pokerstars-payments/05.webp",
+              "w": 1440,
+              "h": 1171,
+              "alt": "Desktop transaction history design with filters and sorting above the list",
+              "cap": "Desktop: dropdowns make filtering simple and familiar.",
+              "zoom": true,
+              "maxw": "min(100%, 900px)"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/pokerstars-payments/06.webp",
+              "w": 998,
+              "h": 680,
+              "alt": "Mobile transaction history on a phone, with the sort options Newest first and Oldest first open",
+              "cap": "Sort by: quickly switch between newest and oldest.",
+              "zoom": true,
+              "maxw": "min(100%, 640px)"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "three",
+          "images": [
+            {
+              "src": "/images/pokerstars-payments/07.webp",
+              "w": 721,
+              "h": 2636,
+              "alt": "Mobile transaction history list with filter, sort and export controls",
+              "cap": "Mobile: the transaction list, with filter, sort and export controls.",
+              "zoom": true,
+              "maxw": "min(100%, 280px)",
+              "tag": "Mobile list"
+            },
+            {
+              "src": "/images/pokerstars-payments/08.png",
+              "w": 360,
+              "h": 1443,
+              "alt": "Mobile filters screen with transaction type, payment method and date range selected",
+              "cap": "Filters: transaction type, payment method and preset date ranges.",
+              "zoom": false,
+              "maxw": "min(100%, 240px)",
+              "tag": "Filters"
+            },
+            {
+              "src": "/images/pokerstars-payments/09.png",
+              "w": 361,
+              "h": 1479,
+              "alt": "Mobile filters screen with a calendar open for picking specific days",
+              "cap": "Select days: pick specific days directly from the calendar.",
+              "zoom": false,
+              "maxw": "min(100%, 240px)",
+              "tag": "Calendar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "th-reflect",
+      "title": "Reflections & Learnings",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The new filter system made it easier for players to find transactions quickly, which helped reduce support tickets and improve satisfaction scores.",
+            "The project brought UX, Product and Engineering closer together, building a stronger shared understanding of how evidence can shape decisions. It also helped the team work in a more data-driven way, making testing and iteration a normal part of how we design."
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "The lesson I took: back design decisions with data, while staying open to feedback from others."
+          ],
+          "lead": true
+        }
+      ]
+    },
+    {
+      "id": "pmm",
+      "title": "Project 2 — Payment Method Management",
+      "plain": true,
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Creating a clearer, more trusted way for players to manage their payments."
+          ],
+          "lead": true
+        },
+        {
+          "type": "facts",
+          "highlight": false,
+          "items": [
+            {
+              "value": "Senior UX Designer",
+              "label": "My role: senior oversight, design direction and mentoring"
+            },
+            {
+              "value": "Four months",
+              "label": "Duration"
+            },
+            {
+              "value": "Desktop & mobile",
+              "label": "Platforms"
+            }
+          ]
+        },
+        {
+          "type": "facts",
+          "highlight": false,
+          "items": [
+            {
+              "value": "Not launched",
+              "label": "Payment Method Management has not launched. This story covers the design direction, decisions and testing, not results.",
+              "hl": true
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "I guided discovery, aligned the design with business goals, and mentored the junior designer who led the day-to-day work."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pmm-challenge",
+      "title": "The Challenge",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Players couldn’t easily manage their payment methods. Even simple tasks, like removing a card or checking a limit, meant contacting support.",
+            "There also wasn’t a shared understanding of what “management” meant between teams. We needed to design something simple for players, compliant for the business and realistic for development."
+          ],
+          "heading": "Even simple tasks needed support"
+        },
+        {
+          "type": "list",
+          "heading": "Goals",
+          "items": [
+            "Give players more control over their payment methods",
+            "Reduce support dependency and build trust through clear design"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pmm-research",
+      "title": "Research & Discovery",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "To understand how players managed their payment methods, we surveyed 247 players across the UK and US, reviewed previous research and customer support data, and held stakeholder interviews.",
+            "This uncovered key pain points, from confusion around verification steps to limited control over updating or removing cards."
+          ],
+          "heading": "Starting with evidence"
+        },
+        {
+          "type": "facts",
+          "highlight": true,
+          "items": [
+            {
+              "value": "70%",
+              "label": "only use one payment method on PokerStars"
+            },
+            {
+              "value": "3%",
+              "label": "use more than three payment methods"
+            },
+            {
+              "value": "51%",
+              "label": "believe it is important to have a dedicated section"
+            },
+            {
+              "value": "39%",
+              "label": "expect to find that section within the Cashier"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "“Lost debit card so had to input new details of my card and had to request to have the old details removed by support to be able to do so.”"
+          ],
+          "heading": "In a player’s words",
+          "lead": true
+        }
+      ]
+    },
+    {
+      "id": "pmm-mvp",
+      "title": "Defining What to Build First",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "I facilitated cross-team workshops with Product, CX and Engineering to define the MVP scope. Together, we prioritised View, Verify and Set as Preferred for the first release, while planning Edit and Delete for future iterations.",
+            "That alignment helped the team focus on delivering meaningful improvements early, without overcomplicating the first release."
+          ],
+          "heading": "Agreeing a realistic first scope"
+        },
+        {
+          "type": "facts",
+          "highlight": false,
+          "items": [
+            {
+              "value": "View",
+              "label": "MVP 1"
+            },
+            {
+              "value": "Verify",
+              "label": "MVP 1"
+            },
+            {
+              "value": "Set as Preferred",
+              "label": "MVP 1"
+            },
+            {
+              "value": "Edit",
+              "label": "Future iteration"
+            },
+            {
+              "value": "Delete",
+              "label": "Future iteration"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/pokerstars-payments/10.webp",
+              "w": 736,
+              "h": 549,
+              "alt": "Prioritisation board plotting payment method management features by impact and effort",
+              "cap": "MVP prioritisation workshop: mapping player impact against technical effort.",
+              "zoom": false,
+              "maxw": "min(100%, 736px)"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/pokerstars-payments/11.webp",
+              "w": 1300,
+              "h": 769,
+              "alt": "A user flow for the Cashier, built from sticky notes",
+              "cap": "The user flow, mapped out with sticky notes.",
+              "zoom": true,
+              "maxw": "min(100%, 1000px)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pmm-leadership",
+      "title": "My Leadership Contribution",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "A junior UX designer led the day-to-day design work. I supported them through wireframing, prototyping and regular design reviews, ensuring consistency and clarity at every stage.",
+            "We worked closely with UI and Engineering to align on accessibility, information hierarchy and regulatory requirements such as masking and verification."
+          ],
+          "heading": "Senior guidance, shared execution"
+        },
+        {
+          "type": "findings",
+          "items": [
+            {
+              "title": "Day-to-day design execution",
+              "why": "Led by the junior UX designer.",
+              "points": []
+            },
+            {
+              "title": "Overall UX direction",
+              "why": "Owned by me, with senior guidance throughout.",
+              "points": [
+                "Guiding discovery and aligning the design with business goals",
+                "Facilitating the workshops with Product, CX and Engineering",
+                "Supporting wireframing, prototyping and regular design reviews",
+                "Aligning with UI and Engineering on accessibility, hierarchy, masking and verification"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "two",
+          "images": [
+            {
+              "src": "/images/pokerstars-payments/12.png",
+              "w": 421,
+              "h": 897,
+              "alt": "Wireframe of an unverified PayPal payment method with a set as preferred option and an edit button",
+              "cap": "Wireframe: an unverified payment method.",
+              "zoom": false,
+              "maxw": "min(100%, 240px)",
+              "tag": "Wireframe"
+            },
+            {
+              "src": "/images/pokerstars-payments/13.png",
+              "w": 421,
+              "h": 897,
+              "alt": "Wireframe of editing a payment method, with save, cancel, verify card now and delete card actions",
+              "cap": "Wireframe: editing a method. Edit and Delete were planned for later iterations.",
+              "zoom": false,
+              "maxw": "min(100%, 240px)",
+              "tag": "Wireframe"
+            }
+          ],
+          "caption": "Wireframe examples exploring hierarchy and verification states."
+        }
+      ]
+    },
+    {
+      "id": "pmm-validation",
+      "title": "Testing & Validation",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "We tested the end-to-end flow on desktop and mobile, to see how easily players could add, verify and set a preferred payment method.",
+            "Players completed key tasks quickly and with little confusion, and their feedback highlighted greater transparency and confidence in managing payment methods. We refined key interactions based on that feedback before the final UI."
+          ],
+          "heading": "Does it make sense to players?"
+        }
+      ]
+    },
+    {
+      "id": "pmm-final",
+      "title": "Final Designs",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The final designs focus on a clear view of the card, a status that clearly shows Verified or Expired, and a list of transactions for each payment method."
+          ],
+          "heading": "Clear, trusted and simple"
+        },
+        {
+          "type": "gallery",
+          "layout": "three",
+          "images": [
+            {
+              "src": "/images/pokerstars-payments/14.png",
+              "w": 375,
+              "h": 993,
+              "alt": "Mobile Your payment method screen showing a Visa card marked Verified",
+              "cap": "Card view: clear details, with a Verified status.",
+              "zoom": false,
+              "maxw": "min(100%, 250px)",
+              "tag": "Card view"
+            },
+            {
+              "src": "/images/pokerstars-payments/15.png",
+              "w": 375,
+              "h": 1073,
+              "alt": "Mobile Your payment method screen on the Transactions tab, listing recent transactions",
+              "cap": "Transactions: a list for the payment method.",
+              "zoom": false,
+              "maxw": "min(100%, 250px)",
+              "tag": "Transactions"
+            },
+            {
+              "src": "/images/pokerstars-payments/16.webp",
+              "w": 717,
+              "h": 437,
+              "alt": "Graphic showing a Visa card clearly marked as Verified, with a callout about Card Status",
+              "cap": "Card status: clearly displays Verified or Expired.",
+              "zoom": false,
+              "maxw": "min(100%, 560px)"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/pokerstars-payments/17.webp",
+              "w": 2000,
+              "h": 1421,
+              "alt": "Desktop Your payment method page, showing a Visa card and its details",
+              "cap": "Desktop view.",
+              "zoom": true,
+              "maxw": "min(100%, 900px)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pmm-reflect",
+      "title": "Reflections & Learnings",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The early collaboration across Product, Engineering and CX, starting with the workshops, set the tone for the project: open, aligned and evidence-led from the start.",
+            "Owning the design roadmap meant balancing team capacity, and knowing when to move fast and when to slow down for better decisions."
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Mentoring the junior designer was a big part of this project. Guiding them while keeping delivery on track strengthened both the work and the team."
+          ],
+          "lead": true
+        }
+      ]
+    }
+  ],
+  "next": null
+}
