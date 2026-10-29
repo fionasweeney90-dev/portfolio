@@ -1,9 +1,9 @@
 import { defineConfig } from 'astro/config';
 
-// Served from GitHub Pages at https://fionasweeney90-dev.github.io/portfolio/.
-// If you move to a custom domain or a <user>.github.io repo, set base to '/'.
+// Served from GitHub Pages on the custom domain https://fionasweeneydesign.com/.
+// The domain itself is set in the repo's Settings → Pages (a CNAME file isn't used with Actions deploys).
 export default defineConfig({
-  site: 'https://fionasweeney90-dev.github.io',
-  base: '/portfolio',
+  site: 'https://fionasweeneydesign.com',
+  base: '/',
   trailingSlash: 'ignore',
 });
