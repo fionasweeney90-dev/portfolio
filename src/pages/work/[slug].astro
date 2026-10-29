@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
+import Shot from '../../components/case-study/Shot.astro';
+import CaseStudyBlock from '../../components/case-study/CaseStudyBlock.astro';
+import { caseStudies, numberedSections, type CaseStudy } from '../../data/case-study';
+import { accentFor, url } from '../../lib/site';
+import '../../styles/case-study.css';
+
+export function getStaticPaths() {
+  return caseStudies.map(({ slug, data }) => ({ params: { slug }, props: { project: data } }));
+}
+
+const { project: p } = Astro.props as { project: CaseStudy };
+const sections = numberedSections(p.sections);
+---
+<BaseLayout title={`${p.title} · Fiona Sweeney`} description={p.subtitle}>
+  <div class:list={['cs', `acc-${accentFor(p.company)}`]}>
+    <header>
+      <a class="cl back" href={url('/') + '#work'}><Icon name="arrow-left" />{p.backLabel ?? 'Back to work'}</a>
+      <div class="cs-co"><span class="co">{p.company}</span></div>
+      <h1 class="cs-title">{p.title}</h1>
+      <p class="cs-sub">{p.subtitle}</p>
+      {p.noCover ? (
+        <div class="callout-r cs-rule"></div>
+      ) : (
+        <div class="cs-cover"><Shot shot={p.cover ?? { label: '[Add cover image]' }} ratio="2 / 1" style="min-height: 240px" /></div>
+      )}
+      <div class="cs-info">
+        {p.info.map((i) => (
+          <div><p class="cs-il">{i.label}</p><p class="cs-iv">{i.value}</p></div>
+        ))}
+      </div>
+    </header>
+
+    <main>
+      {sections.map((s) => (
+        <section class="cs-sec" id={s.id}>
+          <div class="cs-sh">
+            {s.number && <span class="cs-n">{s.number}</span>}
+            <h2 class="cs-h">{s.title}</h2>
+          </div>
+          {s.blocks.map((block) => <CaseStudyBlock block={block} />)}
+        </section>
+      ))}
+    </main>
+
+    {p.next?.href && (
+      <div class="cs-next">
+        <p class="cs-next-l">Next project</p>
+        <a class="cl nx" href={url(p.next.href)}>{p.next.title}<Icon name="arrow-right" /></a>
+      </div>
+    )}
+  </div>
+</BaseLayout>

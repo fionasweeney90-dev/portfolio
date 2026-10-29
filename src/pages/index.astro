@@ -1,0 +1,167 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import Icon from '../components/Icon.astro';
+import { projects } from '../data/projects';
+import { url } from '../lib/site';
+---
+<BaseLayout title="Fiona Sweeney · Lead Product Designer" home>
+  <header id="top" class="hero">
+    <h1>I like making complicated things<br /><span class="hl word">simple.</span></h1>
+    <p class="body-text intro">I've spent the last 10+ years designing digital products across e-commerce, payments and gaming. I enjoy getting stuck into tricky problems, bringing people together and creating experiences that just make sense.</p>
+    <a class="btn" href="#work">View selected work</a>
+  </header>
+
+  <section id="work" class="work">
+    <div class="work-head">
+      <h2 class="eyebrow">SELECTED WORK</h2>
+    </div>
+    <div class="grid">
+      {projects.map((project) => <ProjectCard project={project} />)}
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-text">
+      <h2 class="eyebrow">A LITTLE ABOUT ME</h2>
+      <h3 class="about-title">Hey, I’m Fiona! <span class="wave" role="img" aria-label="waving hand">👋</span></h3>
+      <div class="about-body">
+        <p class="body-text">I’m a Lead Product Designer with 10+ years’ experience working across mobile, web and desktop.</p>
+        <p class="body-text">I started out in agency life, moved into e-commerce, and now lead design across multiple gaming brands at Flutter. Along the way, I’ve worked across payments, marketing and core product experiences, giving me a good understanding of how products and customer journeys fit together.</p>
+        <p class="body-text">I love getting people together to solve problems. Whether it’s running a workshop, sketching out ideas or challenging assumptions, I believe some of the best work comes from sharing different perspectives. I’m a big fan of face-to-face collaboration and enjoy mentoring other designers along the way.</p>
+        <p class="body-text">I’m particularly interested in making complex experiences feel simple, while balancing customer needs, business goals and technical constraints.</p>
+        <h4 class="outside">OUTSIDE OF WORK</h4>
+        <p class="body-text outside-text">You’ll usually find me running, hiking, planning my next trip or on the hunt for good coffee and somewhere lovely to eat.</p>
+        <!-- TODO: point this at the CV once it's added (e.g. public/fiona-sweeney-cv.pdf). -->
+        <a class="cl cv" href="#about">View CV<Icon name="arrow-up-right" /></a>
+      </div>
+    </div>
+    <div class="photos">
+      <div class="photo tall"><img src={url('/images/home/about-1.webp')} alt="Fiona holding a finisher’s medal after a run in the park" style="object-position: 50% 55%" /></div>
+      <div class="photo square"><img src={url('/images/home/about-2.webp')} alt="Fiona smiling beside a turquoise shopfront on a sunny street" style="object-position: 50% 100%" /></div>
+      <div class="photo wide"><img src={url('/images/home/about-3.webp')} alt="Fiona sitting on rocks above a turquoise mountain lake" /></div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: clamp(64px, 12vw, 160px) 0 clamp(56px, 9vw, 120px);
+  }
+  h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: clamp(36px, 5vw, 72px);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+  }
+  .word {
+    display: inline-block;
+    margin-top: 0.15em;
+    padding: 0.111em 0.222em;
+    border-radius: 0.111em;
+    color: var(--ink);
+  }
+  .intro {
+    margin: clamp(32px, 3vw, 40px) 0 0;
+    max-width: 850px;
+  }
+  .btn {
+    margin-top: 40px;
+  }
+
+  .work {
+    padding: 40px 0 clamp(64px, 8vw, 100px);
+  }
+  .work-head {
+    border-top: 1px solid var(--rule);
+    padding-top: 20px;
+    margin-bottom: 40px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, max(320px, 45%)), 1fr));
+    gap: clamp(48px, 6vw, 80px) clamp(24px, 3vw, 40px);
+  }
+
+  .about {
+    border-top: 1px solid var(--rule);
+    padding: 20px 0 clamp(80px, 9vw, 120px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 48px clamp(40px, 6vw, 96px);
+  }
+  .about-text {
+    flex: 1 1 420px;
+    min-width: 0;
+  }
+  .about-text .eyebrow {
+    margin-bottom: 24px;
+  }
+  .about-title {
+    margin: 0 0 clamp(24px, 3vw, 36px);
+    font-size: clamp(32px, 3.4vw, 48px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+  }
+  .wave {
+    display: inline-block;
+    font-size: 0.85em;
+    margin-left: 0.05em;
+  }
+  .about-body {
+    max-width: 600px;
+  }
+  .outside {
+    margin: clamp(32px, 4vw, 48px) 0 12px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .outside-text {
+    margin-bottom: 12px;
+  }
+  .cv {
+    font-size: 15px;
+  }
+  .cv:hover {
+    text-decoration-color: var(--pink);
+  }
+  .photos {
+    flex: 1 1 420px;
+    min-width: 0;
+    max-width: 720px;
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    grid-template-rows: auto auto;
+    gap: clamp(12px, 2vw, 24px);
+    align-items: stretch;
+  }
+  .photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .photo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .tall {
+    grid-row: 1 / span 2;
+    min-height: 360px;
+  }
+  .square {
+    aspect-ratio: 1 / 1;
+  }
+  .wide {
+    aspect-ratio: 4 / 3;
+  }
+</style>

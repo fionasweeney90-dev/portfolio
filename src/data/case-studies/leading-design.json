@@ -1,0 +1,153 @@
+{
+  "company": "Flutter UK&I",
+  "title": "Leading Design Through Complexity",
+  "subtitle": "Leading UX direction and cross-functional collaboration on a confidential digital experience.",
+  "backLabel": "Back to Selected Work",
+  "noCover": true,
+  "info": [
+    {
+      "label": "My role",
+      "value": "Lead Product Designer"
+    },
+    {
+      "label": "Status",
+      "value": "Confidential · In development"
+    },
+    {
+      "label": "Focus",
+      "value": "UX leadership, collaboration, stakeholder alignment and design direction"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "plain": true,
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Some of the most interesting design challenges go beyond the screens. They’re about bringing people together, navigating different perspectives and finding a clear direction."
+          ],
+          "lead": true
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "This project has given me an opportunity to lead UX direction, collaborate closely with another designer and work across teams to shape a complex digital experience."
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "This project is confidential and still in development, so detailed project information isn’t publicly available."
+          ],
+          "heading": "A note on confidentiality"
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "title": "The Context",
+      "blocks": [
+        {
+          "type": "list",
+          "heading": "To add",
+          "items": [
+            "[Add the high-level customer and business challenge]",
+            "[Add project objectives]",
+            "[Add key constraints]",
+            "[Add why the work required cross-functional collaboration]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leading",
+      "title": "Leading the Design",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Leading UX direction, working closely with another designer, and collaborating across teams."
+          ],
+          "lead": true
+        },
+        {
+          "type": "findings",
+          "items": [
+            {
+              "title": "Setting and maintaining UX direction",
+              "why": "[Add a specific example of what I influenced or decided]",
+              "points": []
+            },
+            {
+              "title": "Supporting and guiding another designer",
+              "why": "[Add a specific example]",
+              "points": []
+            },
+            {
+              "title": "Working with Product, Engineering and other stakeholders",
+              "why": "[Add a specific example]",
+              "points": []
+            },
+            {
+              "title": "Challenging assumptions and navigating different opinions",
+              "why": "[Add a specific example]",
+              "points": []
+            },
+            {
+              "title": "Balancing customer needs, commercial priorities and technical constraints",
+              "why": "[Add a specific example]",
+              "points": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "challenges",
+      "title": "Navigating Challenges",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "[Add a real example]"
+          ],
+          "heading": "Bringing different perspectives together"
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "[Add a real example]"
+          ],
+          "heading": "Making decisions and finding alignment"
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "[Add a real example]"
+          ],
+          "heading": "Balancing design quality and delivery"
+        }
+      ]
+    },
+    {
+      "id": "reflections",
+      "title": "Reflections & Learnings",
+      "blocks": [
+        {
+          "type": "list",
+          "heading": "To add",
+          "items": [
+            "[Add what this project taught me about design leadership]",
+            "[Add reflections on working collaboratively with another designer]",
+            "[Add reflections on stakeholder relationships]",
+            "[Add what I’d approach differently in future]"
+          ]
+        }
+      ]
+    }
+  ],
+  "next": null
+}

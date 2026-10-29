@@ -1,0 +1,59 @@
+---
+import { url } from '../lib/site';
+
+interface Props {
+  // On the home page links jump within the page; elsewhere they go back to it.
+  home?: boolean;
+}
+
+const { home = false } = Astro.props;
+const to = (hash: string) => (home ? hash : url('/') + hash);
+---
+<nav class="nav">
+  <div>
+    <a class="nv brand" href={home ? '#top' : url('/')}>Fiona Sweeney</a>
+    <p class="role">Lead Product Designer</p>
+  </div>
+  <div class="links">
+    <a class="nv" href={to('#work')}>Work</a>
+    <a class="nv" href={to('#about')}>About</a>
+    <a class="nv" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<style>
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(20px, 2.5vw, 32px) 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .nv {
+    display: inline-block;
+    padding: 10px 4px;
+    margin: -10px -4px;
+  }
+  .brand {
+    display: block;
+    font-weight: 700;
+    font-size: clamp(24px, 2.1vw, 30px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .role {
+    margin: 4px 0 0;
+    font-size: clamp(15px, 1.1vw, 16px);
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .links {
+    display: flex;
+    gap: clamp(16px, 3vw, 40px);
+    font-size: clamp(15px, 1.1vw, 16px);
+    font-weight: 500;
+  }
+</style>

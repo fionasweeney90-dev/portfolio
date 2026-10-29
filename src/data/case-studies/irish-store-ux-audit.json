@@ -1,0 +1,591 @@
+{
+  "company": "Irish Store",
+  "title": "UX Audit & Improvements",
+  "subtitle": "Finding the friction in the shopping experience — and making meaningful improvements.",
+  "backLabel": "Back to Selected Work",
+  "cover": {
+    "label": "[Add cover image — suggest the updated checkout, PDF p.7]"
+  },
+  "info": [
+    {
+      "label": "My role",
+      "value": "UX Designer, working alongside two other UX designers"
+    },
+    {
+      "label": "My involvement",
+      "value": "User research, analysis, prototype builds and handover to developers"
+    },
+    {
+      "label": "Project",
+      "value": "UX audit and quick-win improvements"
+    },
+    {
+      "label": "Status",
+      "value": "Completed"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Project Overview",
+      "plain": true,
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The Irish Store is an e-commerce retailer with a vision to become the destination digital retailer for products with deep emotional meaning and strong cultural connection."
+          ],
+          "lead": true
+        }
+      ]
+    },
+    {
+      "id": "challenge",
+      "title": "The Challenge",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "The business saw a massive increase in new users during 2020 (Covid). With that rapid growth, more issues started coming to light through queries from customer service.",
+            "The business needed to address these issues to keep hold of its customers and create a better user experience."
+          ],
+          "heading": "When growth brings the cracks to the surface"
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "The aim was to improve the experience through “quick wins” that would also benefit the business. We started with three targets:"
+          ],
+          "heading": "What we set out to do"
+        },
+        {
+          "type": "facts",
+          "highlight": false,
+          "items": [
+            {
+              "value": "10%",
+              "label": "Target: decrease customer service queries and complaints"
+            },
+            {
+              "value": "10%",
+              "label": "Target: increase conversion rate"
+            },
+            {
+              "value": "10%",
+              "label": "Target: decrease checkout abandonment"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "These were the goals we set at the start of the project, not results. The reported outcomes are in section 06."
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "I worked alongside two other UX designers, and was involved in the user research, analysis, prototype builds and handover to developers."
+          ],
+          "heading": "How we worked"
+        }
+      ]
+    },
+    {
+      "id": "customers",
+      "title": "Understanding Our Customers",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Before the user tests, we defined the Irish Store customer using previous data: a woman based in the USA, aged 40–60, with an income of $30,000–$100,000."
+          ],
+          "heading": "Starting with who we were designing for"
+        },
+        {
+          "type": "facts",
+          "highlight": true,
+          "items": [
+            {
+              "value": "2,089",
+              "label": "UX survey responses, captured as of 17/03/2021"
+            },
+            {
+              "value": "97.45%",
+              "label": "said they found everything they were looking for"
+            },
+            {
+              "value": "9/10",
+              "label": "overall rating for how the experience met expectations"
+            },
+            {
+              "value": "Over 66%",
+              "label": "preferred paying by credit or debit card; over 30% said PayPal"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "two",
+          "images": [
+            {
+              "src": "/images/irish-store-ux-audit/01.png",
+              "w": 591,
+              "h": 507,
+              "alt": "Donut chart: 97.45% of survey respondents said yes and 2.55% said no to finding everything they were looking for",
+              "cap": "Survey Q1: 97.45% of respondents said they found everything they were looking for.",
+              "zoom": false,
+              "maxw": "min(100%, 591px)"
+            },
+            {
+              "src": "/images/irish-store-ux-audit/02.png",
+              "w": 759,
+              "h": 580,
+              "alt": "Bar chart of preferred payment methods, led by credit or debit card and then PayPal",
+              "cap": "Survey Q4: over 66% preferred credit or debit card and over 30% PayPal. Apple Pay and Discover weren’t available at the time.",
+              "zoom": false,
+              "maxw": "min(100%, 759px)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Most customers were happy and satisfied, and many simply said nothing needed to change. So the takeaway was to make small, considered changes that would enhance and elevate the experience.",
+            "Where people did suggest improvements, their answers fell into a few clear themes:"
+          ],
+          "heading": "What the survey told us"
+        },
+        {
+          "type": "findings",
+          "items": [
+            {
+              "title": "Product findability",
+              "why": "Customers wanted clearer, more consistent product information.",
+              "points": [
+                "Improve size chart information across product types, with the right context for UK and USA",
+                "Make it easier to compare items, and improve product imagery",
+                "Keep product information consistent, as some products had much more info than others",
+                "Be clear on out-of-stock items and alternatives"
+              ]
+            },
+            {
+              "title": "Basket and checkout",
+              "why": "The payment step was causing a lot of confusion.",
+              "points": [
+                "Explain the next steps and when card details will be entered",
+                "Add form hints and error messages",
+                "Make the debit card option easier to find",
+                "Be clear on discount eligibility, as codes not working caused confusion"
+              ]
+            },
+            {
+              "title": "General UX",
+              "why": "Usability, performance and consistency came up too.",
+              "points": [
+                "Usability across devices, including scrolling and freezing",
+                "Improved performance and faster page speed",
+                "Refresh the design, with consistent design patterns"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "text": "“When it came time to put in card info only saw PayPal”",
+          "note": "UX survey respondent, on the checkout payment step"
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "We ran user tests across mobile, desktop and tablet, capturing what participants said, thought, did and felt."
+          ],
+          "heading": "Testing with real users"
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/irish-store-ux-audit/03.webp",
+              "w": 2400,
+              "h": 1312,
+              "alt": "Synthesis boards from the user tests on mobile, desktop and tablet, grouped into says, thinks, does and feels",
+              "cap": "Synthesis boards from the user tests on mobile, desktop and tablet: what participants said, thought, did and felt.",
+              "zoom": true
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "split",
+          "images": [
+            {
+              "src": "/images/irish-store-ux-audit/04.webp",
+              "w": 1690,
+              "h": 1697,
+              "alt": "Board of customer needs: two cohorts, and what people consider when shopping for clothes",
+              "cap": "Customer needs: two high-level cohorts, and what people consider when shopping for clothes.",
+              "zoom": true
+            }
+          ],
+          "heading": "Customer needs",
+          "text": "We identified two high-level customer cohorts: people buying a gift and people buying for themselves. When shopping for clothes, customers told us they consider quality and material, fit, style, price and occasion."
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "We combined insights from multiple users, from the user tests and the UX survey, into one empathy map of what customers say, think, do and feel.",
+            "Customers loved the products and described the brand as credible, authentic and trustworthy. They also found search clunky and the size guide confusing."
+          ],
+          "heading": "Pulling it together in an empathy map"
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/irish-store-ux-audit/05.webp",
+              "w": 2345,
+              "h": 2305,
+              "alt": "Empathy map of what users say, think, do and feel, built from user tests and the UX survey",
+              "cap": "The empathy map: insights from multiple users, drawn from the user tests and the UX survey.",
+              "zoom": true,
+              "maxw": "min(100%, 900px)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audit",
+      "title": "The UX Audit",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Alongside the research, we reviewed the site against UX best practice and grouped what we found into themes. Here are the main ones, and why each mattered."
+          ],
+          "heading": "Reviewing the site against best practice"
+        },
+        {
+          "type": "findings",
+          "items": [
+            {
+              "title": "Navigation and terminology",
+              "why": "If the words don’t match, customers may think they’ve clicked the wrong link.",
+              "points": [
+                "Page names and navigation labels didn’t always match, for example “Sweaters” in the navigation but “Aran Jumpers” as the page title",
+                "Revisit top-level navigation and category names on the UK store (sweaters / jumpers, jewellery / jewelry)",
+                "Reduce clicks and condense categories, as some only had two products",
+                "Introduce occasion categories, such as anniversaries and milestone birthdays"
+              ]
+            },
+            {
+              "title": "Product findability",
+              "why": "Customers need to be able to refine results easily.",
+              "points": [
+                "A “find similar” pop-up got in the way on desktop and appeared mid-click, causing layout shift",
+                "Try a pricing slider, and increase tap targets on mobile facet options",
+                "Don’t show review stars on product listings for one star or below",
+                "The “find similar” button sat where people expect to find add to basket or view more"
+              ]
+            },
+            {
+              "title": "Product information and sizing",
+              "why": "Can a user find everything they’re looking for?",
+              "points": [
+                "Add a size guide for all products",
+                "Make the active promotion message and code more appealing, so it can’t be missed",
+                "Show delivery lead times on every product, not just some",
+                "Refresh the layout: justified text was hard to read, add to bag and save for later were too close together, and the quantity box needed optimising for touch"
+              ]
+            },
+            {
+              "title": "Mobile usability",
+              "why": "On mobile, much of the information was off canvas.",
+              "points": [
+                "Hard to use on iPhone 11 because a lot of the content sat off canvas",
+                "Tap targets needed attention"
+              ]
+            },
+            {
+              "title": "Basket and checkout",
+              "why": "The checkout needed to be easy to digest, and to build trust and credibility.",
+              "points": [
+                "Revisit the styling and wording, and add an image for credit and debit cards so they’re not missed",
+                "Add a message so people know card payment comes in the next step",
+                "Add a discount line to the order totals",
+                "The delivery message error appeared in the payment step with no clear action, and didn’t stay on screen",
+                "Postcode formats were inconsistent"
+              ]
+            },
+            {
+              "title": "Design consistency",
+              "why": "A brand refresh could build trust through a consistent set of UI components.",
+              "points": [
+                "Use the correct alert and message styling",
+                "Revisit calls to action, including hover states on buttons",
+                "A mix of fonts (Roboto and Roboto Condensed)",
+                "Titles switched between uppercase, mixed case and lowercase"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "label": "[Add UX review best-practice board — PDF p.2]",
+              "ratio": "16 / 8"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "three",
+          "images": [
+            {
+              "label": "[Add terminology and navigation examples — PDF p.2]",
+              "tag": "Navigation",
+              "ratio": "4 / 3"
+            },
+            {
+              "label": "[Add product page and checkout examples — PDF p.2]",
+              "tag": "Product & checkout",
+              "ratio": "4 / 3"
+            },
+            {
+              "label": "[Add mobile off-canvas examples (iPhone 11) — PDF p.2]",
+              "tag": "Mobile",
+              "ratio": "4 / 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prioritisation",
+      "title": "Prioritising Improvements",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "After the data was presented to the stakeholders, a prioritisation session took place to go through all the recommendations in the findings.",
+            "We reviewed them through the lens of “effort required”, so that quick wins could be identified."
+          ],
+          "heading": "Deciding what to tackle first"
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/irish-store-ux-audit/06.webp",
+              "w": 2400,
+              "h": 2211,
+              "alt": "Prioritisation matrix plotting recommendations by priority and effort, colour-coded by CX pillar",
+              "cap": "The prioritisation matrix: recommendations plotted by priority and effort, colour-coded by CX pillar.",
+              "zoom": true,
+              "maxw": "min(100%, 900px)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Each recommendation was placed on a matrix of priority against effort, and colour-coded by CX pillar: Customer, Acquisition, Conversion, Retention, Content, Technical and Operations."
+          ],
+          "heading": "Priority versus effort"
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/irish-store-ux-audit/07.webp",
+              "w": 873,
+              "h": 602,
+              "alt": "The “My Quick Wins” board with the quick wins chosen in the prioritisation session",
+              "cap": "The “My Quick Wins” board from the prioritisation session.",
+              "zoom": false,
+              "maxw": "min(100%, 873px)"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "The quick wins that came out of it",
+          "items": [
+            "Remove the search icon from the mobile header, or increase spacing",
+            "Payment step: add credit card images and a message explaining when debit card details will be taken",
+            "Put the debit card option above PayPal",
+            "Site search: restyle the search box and A/B test it",
+            "Product pages: revisit the size guide layout and information",
+            "Show UK and USA size equivalents on each store"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solutions",
+      "title": "From Findings to Solutions",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Three of the quick wins show how the research turned into design changes: the checkout, size guides and search."
+          ],
+          "heading": "Three quick wins, in more detail"
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "The credit card option had been stacked above PayPal. Research had shown the value of showing visuals of the cards, so we added the accepted credit cards.",
+            "We tested internally and refined the layout. From that testing, the call-to-action button was left-aligned, and the matching card icon now highlights as someone enters their card details.",
+            "Once the changes were added to the prototypes and tested further, they were handed over to the developers and implemented on the website."
+          ],
+          "heading": "Checkout: making card payments clearer"
+        },
+        {
+          "type": "gallery",
+          "layout": "ba",
+          "images": [
+            {
+              "src": "/images/irish-store-ux-audit/08.png",
+              "w": 324,
+              "h": 611,
+              "alt": "The original checkout order summary and secure payment area",
+              "cap": "Before: the original payment step, from the UX audit.",
+              "zoom": false,
+              "maxw": "min(100%, 324px)"
+            },
+            {
+              "src": "/images/irish-store-ux-audit/09.webp",
+              "w": 1920,
+              "h": 2306,
+              "alt": "The updated checkout page with accepted card images in the payment area",
+              "cap": "After: the updated checkout, with accepted card images shown.",
+              "zoom": true
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "label": "[Add checkout prototype screens — PDF p.7]",
+              "ratio": "16 / 8"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Analysing the feedback, users wanted more information on product sizes. After reviewing the findings with stakeholders in the company, we decided the size guides would be one of the first things to update."
+          ],
+          "heading": "Size guides: answering the sizing questions"
+        },
+        {
+          "type": "callout",
+          "text": "“Specific sizing chart. Arm length and chest size”",
+          "note": "UX survey respondent"
+        },
+        {
+          "type": "gallery",
+          "layout": "two",
+          "images": [
+            {
+              "src": "/images/irish-store-ux-audit/10.webp",
+              "w": 1408,
+              "h": 874,
+              "alt": "A product size chart with a How to Measure guide alongside it",
+              "cap": "A size chart with “How to Measure” guidance alongside it.",
+              "zoom": true
+            },
+            {
+              "src": "/images/irish-store-ux-audit/11.webp",
+              "w": 1408,
+              "h": 1014,
+              "alt": "A ring size guide with step-by-step measuring instructions",
+              "cap": "A ring size guide with step-by-step measuring instructions.",
+              "zoom": true
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "To improve the search bar, we ran an A/B test of different layouts over the course of a month. The focus was on improving the experience by designing the visuals and layout of the content."
+          ],
+          "heading": "Search: testing different layouts"
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "src": "/images/irish-store-ux-audit/12.webp",
+              "w": 1920,
+              "h": 1838,
+              "alt": "One of the explored search layouts, showing search suggestions and product results over the homepage",
+              "cap": "One of the search layouts explored in the A/B test.",
+              "zoom": true,
+              "maxw": "min(100%, 900px)"
+            }
+          ],
+          "caption": "[Add A/B test outcome, if available]"
+        }
+      ]
+    },
+    {
+      "id": "outcomes",
+      "title": "Outcomes & Learnings",
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "These are the outcomes reported for the project, following the updated payment page. For reference, the original target for each measure was 10%."
+          ],
+          "heading": "Reported results"
+        },
+        {
+          "type": "facts",
+          "highlight": true,
+          "items": [
+            {
+              "value": "15.27%",
+              "label": "increase in conversion rate"
+            },
+            {
+              "value": "10.4%",
+              "label": "decrease in customer queries and complaints"
+            },
+            {
+              "value": "11.8%",
+              "label": "decrease in checkout abandonment"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "The clarification of the size guides resulted in fewer customer queries and fewer returns of wrongly sized products. These clarifications did involve some manual staff intervention, but the overall customer experience improved significantly."
+          ],
+          "heading": "Size guides"
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "Research, collaboration and prioritisation helped us turn usability problems into actionable improvements. Listening to customers showed us where the friction was, working with stakeholders helped us agree what to tackle first, and focusing on quick wins meant meaningful changes reached the website."
+          ],
+          "heading": "What I took from it",
+          "lead": true
+        }
+      ]
+    }
+  ],
+  "next": null
+}

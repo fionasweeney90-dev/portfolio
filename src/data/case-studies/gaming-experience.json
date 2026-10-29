@@ -1,0 +1,187 @@
+{
+  "company": "Flutter UK&I",
+  "title": "Gaming Experience Improvements",
+  "subtitle": "Refining an established digital gaming experience through considered UX and interaction design.",
+  "backLabel": "Back to Selected Work",
+  "cover": {
+    "label": "[Add cover image, once approved]"
+  },
+  "info": [
+    {
+      "label": "My role",
+      "value": "[Add role]"
+    },
+    {
+      "label": "Status",
+      "value": "In development"
+    },
+    {
+      "label": "Focus",
+      "value": "UX design, interaction design and improving existing experiences"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "plain": true,
+      "blocks": [
+        {
+          "type": "text",
+          "paragraphs": [
+            "Improving an existing experience isn’t always about changing everything. Sometimes it’s about understanding what’s already there, identifying opportunities and making considered improvements that create a clearer, more consistent experience."
+          ],
+          "lead": true
+        },
+        {
+          "type": "text",
+          "paragraphs": [
+            "This project focuses on refining the interaction and user experience within an established gaming product."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "existing",
+      "title": "The Existing Experience",
+      "blocks": [
+        {
+          "type": "list",
+          "heading": "To add",
+          "items": [
+            "[Add brief background]",
+            "[Add how the experience currently works]",
+            "[Add opportunities identified for improvement]",
+            "[Add existing design or technical constraints]"
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "label": "[Add existing experience screen, once approved]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "approach",
+      "title": "My Role & Design Approach",
+      "blocks": [
+        {
+          "type": "findings",
+          "items": [
+            {
+              "title": "My responsibilities and ownership",
+              "why": "[Add details]",
+              "points": []
+            },
+            {
+              "title": "Collaboration with Product, Engineering, Commercial and other teams",
+              "why": "[Add details]",
+              "points": []
+            },
+            {
+              "title": "Important UX and interaction decisions",
+              "why": "[Add details]",
+              "points": []
+            },
+            {
+              "title": "Existing design assets and patterns",
+              "why": "[Add considerations]",
+              "points": []
+            },
+            {
+              "title": "Balancing usability, brand consistency and commercial objectives",
+              "why": "[Add details]",
+              "points": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "improvements",
+      "title": "Designing the Improvements",
+      "blocks": [
+        {
+          "type": "gallery",
+          "layout": "ba",
+          "images": [
+            {
+              "label": "[Add existing experience screen]",
+              "tag": "Existing"
+            },
+            {
+              "label": "[Add proposed experience screen]",
+              "tag": "Proposed"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "label": "[Add interaction improvement, such as a flow or prototype]"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "two",
+          "images": [
+            {
+              "label": "[Add component or visual-state comparison]"
+            },
+            {
+              "label": "[Add component or visual-state comparison]"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "devices",
+          "images": [
+            {
+              "label": "[Add mobile screen]"
+            },
+            {
+              "label": "[Add mobile screen]"
+            },
+            {
+              "label": "[Add mobile screen]"
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "layout": "full",
+          "images": [
+            {
+              "label": "[Add desktop screen, if relevant]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reflections",
+      "title": "Reflections & Next Steps",
+      "blocks": [
+        {
+          "type": "list",
+          "heading": "To add",
+          "items": [
+            "[Add design considerations and trade-offs]",
+            "[Add lessons learned]",
+            "[Add further work before release]"
+          ]
+        }
+      ]
+    }
+  ],
+  "next": null
+}
