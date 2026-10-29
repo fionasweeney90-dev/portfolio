@@ -1,5 +1,8 @@
+import { showDrafts } from '../lib/site';
+
 // Selected Work cards on the home page. Each slug matches a case study in src/data/case-studies/.
-// Add `image` (a path under public/) when a cover is ready; cards without one show a placeholder.
+// Add `image` (a path under public/) when a cover is ready; cards without one show a plain tile.
+// `draft: true` keeps a card off the published site (it still shows in `npm run dev`).
 export interface ProjectCard {
   tier: 'featured' | 'secondary' | 'support';
   company: string;
@@ -9,9 +12,10 @@ export interface ProjectCard {
   tagline: string;
   slug: string;
   image?: string;
+  draft?: boolean;
 }
 
-export const projects: ProjectCard[] = [
+const allProjects: ProjectCard[] = [
   {
     tier: 'featured',
     company: 'Flutter UK&I',
@@ -39,6 +43,7 @@ export const projects: ProjectCard[] = [
     tags: 'UX Leadership · Collaboration · Design Direction',
     tagline: 'Bringing people together. Finding a clear direction.',
     slug: 'leading-design',
+    draft: true,
   },
   {
     tier: 'support',
@@ -48,6 +53,7 @@ export const projects: ProjectCard[] = [
     tags: 'UX Design · Interaction Design · Existing Experiences',
     tagline: 'Improving the experience, one interaction at a time.',
     slug: 'gaming-experience',
+    draft: true,
   },
   {
     tier: 'support',
@@ -68,3 +74,5 @@ export const projects: ProjectCard[] = [
     slug: 'irish-store-email',
   },
 ];
+
+export const projects = allProjects.filter((p) => showDrafts || !p.draft);

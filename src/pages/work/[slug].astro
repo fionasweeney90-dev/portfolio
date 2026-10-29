@@ -3,15 +3,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Icon from '../../components/Icon.astro';
 import Shot from '../../components/case-study/Shot.astro';
 import CaseStudyBlock from '../../components/case-study/CaseStudyBlock.astro';
-import { caseStudies, numberedSections, type CaseStudy } from '../../data/case-study';
+import { caseStudies, numberedSections, publicCaseStudy } from '../../data/case-study';
 import { accentFor, url } from '../../lib/site';
 import '../../styles/case-study.css';
 
 export function getStaticPaths() {
-  return caseStudies.map(({ slug, data }) => ({ params: { slug }, props: { project: data } }));
+  return caseStudies.map(({ slug, data }) => ({ params: { slug }, props: { project: publicCaseStudy(data) } }));
 }
 
-const { project: p } = Astro.props as { project: CaseStudy };
+const { project: p } = Astro.props;
 const sections = numberedSections(p.sections);
 ---
 <BaseLayout title={`${p.title} · Fiona Sweeney`} description={p.subtitle}>

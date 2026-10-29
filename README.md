@@ -31,12 +31,25 @@ Each case study is a list of sections, and each section is a list of blocks. Blo
 
 - Sections with no blocks are hidden.
 - Sections marked `"plain": true` are unnumbered.
-- An image without a `src` shows its `label` as a placeholder, so `[Add …]` text marks what's still to do.
 - Add `"zoom": true` to an image to let visitors open it full-screen.
+
+### Drafts and placeholders
+
+`[Add …]` placeholders and images without a `src` show while you work (`npm run dev`) but are left out of
+the published site, so unfinished bits never go live.
+
+To keep a whole project unpublished, add `"draft": true` to its case study JSON and `draft: true` to its card
+in `src/data/projects.ts`. Leading Design and Gaming Experience are drafts for now; delete those two lines
+to publish them.
 
 ### Adding a project cover
 
 Put the image in `public/images/home/` and set `image` on the card in `src/data/projects.ts`.
+
+### Adding the CV
+
+Put the PDF in `public/` (e.g. `public/fiona-sweeney-cv.pdf`) and set `cv: '/fiona-sweeney-cv.pdf'` in
+`src/lib/site.ts`. The "View CV" link appears once that's set.
 
 ## Deploying
 
