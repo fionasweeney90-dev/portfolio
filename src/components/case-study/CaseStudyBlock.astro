@@ -1,6 +1,7 @@
 ---
 import Shot from './Shot.astro';
 import { galleryRatio, type Block } from '../../data/case-study';
+import { showDrafts } from '../../lib/site';
 
 interface Props {
   block: Block;
@@ -8,6 +9,13 @@ interface Props {
 
 const { block: b } = Astro.props;
 const statusLabels = { done: 'Completed', active: 'In progress', planned: 'Planned', tbd: 'Status to confirm' };
+type Status = keyof typeof statusLabels;
+// The legend lists only statuses the timeline uses; "Status to confirm" is a drafting state, hidden when published.
+const visibleStatus = (s: Status) => showDrafts || s !== 'tbd';
+const legend =
+  b.type === 'timeline'
+    ? (Object.keys(statusLabels) as Status[]).filter((s) => visibleStatus(s) && b.phases.some((ph) => (ph.status ?? 'tbd') === s))
+    : [];
 ---
 <div class="cs-b">
   {b.type === 'text' && (
@@ -67,20 +75,20 @@ const statusLabels = { done: 'Completed', active: 'In progress', planned: 'Plann
 
   {b.type === 'timeline' && (
     <div>
-      <div class="tl-leg">
-        <span class="lg lg-done"><i></i>Completed</span>
-        <span class="lg lg-active"><i></i>In progress</span>
-        <span class="lg lg-planned"><i></i>Planned</span>
-        <span class="lg lg-tbd"><i></i>Status to confirm</span>
-      </div>
+      {legend.length > 0 && (
+        <div class="tl-leg">
+          {legend.map((s) => <span class:list={['lg', `lg-${s}`]}><i></i>{statusLabels[s]}</span>)}
+        </div>
+      )}
       <div class="tl">
         {b.phases.map((ph) => {
           const status = ph.status ?? 'tbd';
+          const label = ph.statusLabel ?? (visibleStatus(status) ? statusLabels[status] : '');
           return (
             <div class:list={['tl-i', `st-${status}`]}>
               <p class="tl-k">{ph.kicker}</p>
               <h3 class="tl-t">{ph.title}</h3>
-              <span class="tl-s">{ph.statusLabel ?? statusLabels[status]}</span>
+              {label && <span class="tl-s">{label}</span>}
               <p class="tl-p">{ph.summary}</p>
               {ph.image !== false && <Shot shot={ph.image ?? { label: '[Add screenshot]' }} ratio="4 / 3" />}
               {ph.details && ph.details.length > 0 && (
@@ -99,7 +107,7 @@ const statusLabels = { done: 'Completed', active: 'In progress', planned: 'Plann
     <div>
       {b.items.map((f) => (
         <div class="fnd-r">
-          <div class="fnd-h"><h4>{f.title}</h4><p>{f.why}</p></div>
+          <div class="fnd-h"><h4>{f.title}</h4>{f.why && <p>{f.why}</p>}</div>
           {f.points.length > 0 && <ul>{f.points.map((pt) => <li>{pt}</li>)}</ul>}
         </div>
       ))}

@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { accentFor, url } from '../lib/site';
+import { accentFor, showDrafts, url } from '../lib/site';
 import type { ProjectCard } from '../data/projects';
 
 interface Props {
@@ -12,7 +12,7 @@ const { project: p } = Astro.props;
 <a class:list={['card', `tier-${p.tier}`, `acc-${accentFor(p.company)}`]} href={url(`/work/${p.slug}/`)}>
   <div class="media">
     <div class="img">
-      {p.image ? <img src={url(p.image)} alt="" /> : <span>[{p.title} cover image]</span>}
+      {p.image ? <img src={url(p.image)} alt="" /> : showDrafts && <span>[{p.title} cover image]</span>}
     </div>
     <div class="ov">
       <span class="ov-in">
