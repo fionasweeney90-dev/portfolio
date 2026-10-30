@@ -1,0 +1,11 @@
+{
+  "name": "Fiona Sweeney",
+  "short_name": "Fiona Sweeney",
+  "icons": [
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "theme_color": "#FAF8F4",
+  "background_color": "#FAF8F4",
+  "display": "browser"
+}
