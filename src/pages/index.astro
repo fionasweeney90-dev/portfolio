@@ -30,6 +30,7 @@ const brands = [
   <section id="work" class="work">
     <div class="work-head">
       <h2 class="eyebrow">SELECTED WORK</h2>
+      <h3 class="section-title">A little bit of what I <span class="nowrap">do. <span class="emoji" role="img" aria-label="artist palette">🎨</span></span></h3>
     </div>
     <div class="grid">
       {projects.map((project) => <ProjectCard project={project} />)}
@@ -39,7 +40,7 @@ const brands = [
   <section id="about" class="about">
     <div class="about-text">
       <h2 class="eyebrow">A LITTLE ABOUT ME</h2>
-      <h3 class="about-title">Hey, I’m Fiona! <span class="wave" role="img" aria-label="waving hand">👋</span></h3>
+      <h3 class="section-title">Hey, I’m Fiona! <span class="emoji" role="img" aria-label="waving hand">👋</span></h3>
       <div class="about-body">
         <p class="body-text">I’m a Lead Product Designer with 12+ years’ experience working across mobile, web and desktop.</p>
         <p class="body-text">I started out in agency life, moved into e-commerce, and now lead design across multiple gaming brands at Flutter. Along the way, I’ve worked across payments, marketing and core product experiences, giving me a good understanding of how products and customer journeys fit together.</p>
@@ -113,7 +114,10 @@ const brands = [
   .work-head {
     border-top: 1px solid var(--rule);
     padding-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: clamp(32px, 4vw, 56px);
+  }
+  .work-head .section-title {
+    margin-bottom: 0;
   }
   .grid {
     display: grid;
@@ -133,10 +137,12 @@ const brands = [
     flex: 1 1 420px;
     min-width: 0;
   }
+  .work-head .eyebrow,
   .about-text .eyebrow {
     margin-bottom: 24px;
   }
-  .about-title {
+  /* Large section headline under an eyebrow, shared by Selected Work and About. */
+  .section-title {
     margin: 0 0 clamp(24px, 3vw, 36px);
     font-size: clamp(32px, 3.4vw, 48px);
     font-weight: 700;
@@ -144,7 +150,11 @@ const brands = [
     letter-spacing: -0.03em;
     color: var(--ink);
   }
-  .wave {
+  /* Keeps the last word and its emoji together when the headline wraps. */
+  .nowrap {
+    white-space: nowrap;
+  }
+  .emoji {
     display: inline-block;
     font-size: 0.85em;
     margin-left: 0.05em;
