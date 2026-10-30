@@ -30,5 +30,5 @@ export const contact = {
   linkedin: 'https://www.linkedin.com/in/fiona-sweeney-a709b45b/',
   strava: 'https://www.strava.com/athletes/33728143',
   // Path to the CV under public/, e.g. '/fiona-sweeney-cv.pdf'. The "View CV" link is hidden until this is set.
-  cv: undefined as string | undefined,
+  cv: '/fiona-sweeney-cv.pdf' as string | undefined,
 };
