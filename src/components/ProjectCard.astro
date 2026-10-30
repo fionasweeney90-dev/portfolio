@@ -53,13 +53,10 @@ const { project: p } = Astro.props;
     overflow: hidden;
     border-radius: var(--radius);
     aspect-ratio: 2 / 1;
-    min-height: 300px;
-    /* An explicit width stops min-height + aspect-ratio pushing the card wider than a phone. */
     width: 100%;
   }
   .tier-secondary .media {
     aspect-ratio: 21 / 9;
-    min-height: 240px;
   }
   .tier-support .media {
     aspect-ratio: 16 / 10;
