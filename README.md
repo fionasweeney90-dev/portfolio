@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Then open http://localhost:4321/portfolio/.
+Then open http://localhost:4321/.
 
 ## Where things live
 
@@ -56,5 +56,6 @@ Put the PDF in `public/` (e.g. `public/fiona-sweeney-cv.pdf`) and set `cv: '/fio
 Pushing to `main` builds the site and publishes it to GitHub Pages through `.github/workflows/deploy.yml`.
 In the repo's **Settings → Pages**, set **Source** to **GitHub Actions** once.
 
-The site is served at https://fionasweeney90-dev.github.io/portfolio/. If you move to a custom domain,
-change `base` to `'/'` in `astro.config.mjs`.
+The site is served at https://fionasweeneydesign.com/. The custom domain is set in the repo's
+**Settings → Pages → Custom domain** (no CNAME file is needed with GitHub Actions deploys). `site` and `base`
+in `astro.config.mjs` must match it: `site: 'https://fionasweeneydesign.com'`, `base: '/'`.
