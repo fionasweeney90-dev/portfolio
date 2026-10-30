@@ -14,7 +14,7 @@ export function getStaticPaths() {
 const { project: p } = Astro.props;
 const sections = numberedSections(p.sections);
 ---
-<BaseLayout title={`${p.title} · Fiona Sweeney`} description={p.subtitle}>
+<BaseLayout title={`${p.title} – Fiona Sweeney`} description={p.subtitle} shareType="article">
   <div class:list={['cs', `acc-${accentFor(p.company)}`]}>
     <header>
       <a class="cl back" href={url('/') + '#work'}><Icon name="arrow-left" />{p.backLabel ?? 'Back to work'}</a>
