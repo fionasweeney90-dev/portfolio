@@ -4,7 +4,10 @@
   "subtitle": "Two payments projects: helping players find their transactions, and giving them more control over their saved payment methods.",
   "backLabel": "Back to Selected Work",
   "cover": {
-    "label": "[Add cover image]"
+    "src": "/images/pokerstars-payments/01.webp",
+    "w": 2000,
+    "h": 1000,
+    "alt": "PokerStars Transaction history and payment method screens on desktop and mobile"
   },
   "info": [
     {
@@ -88,7 +91,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/pokerstars-payments/01.webp",
+              "src": "/images/pokerstars-payments/02.webp",
               "w": 986,
               "h": 826,
               "alt": "The existing transaction history inside the Cashier, a dense list of transaction references and amounts",
@@ -125,7 +128,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/pokerstars-payments/02.webp",
+              "src": "/images/pokerstars-payments/03.webp",
               "w": 1134,
               "h": 688,
               "alt": "Bar chart titled Overall importance rating, comparing how important players rated filtering by date, filtering by transaction method, exporting history and filtering by status",
@@ -168,24 +171,22 @@
           "layout": "two",
           "images": [
             {
-              "src": "/images/pokerstars-payments/03.png",
+              "src": "/images/pokerstars-payments/04.png",
               "w": 502,
               "h": 287,
               "alt": "Desktop transaction history with filters as dropdowns: sort by, transaction type, payment method and date range",
               "cap": "Filter system A: dropdown filters apply automatically.",
               "zoom": false,
-              "maxw": "min(100%, 502px)",
-              "tag": "System A"
+              "maxw": "min(100%, 502px)"
             },
             {
-              "src": "/images/pokerstars-payments/04.png",
+              "src": "/images/pokerstars-payments/05.png",
               "w": 524,
               "h": 480,
               "alt": "Desktop filters modal with transaction type, payment method and date range options",
               "cap": "Filter system B: a popup modal, with a button to apply the filters.",
               "zoom": false,
-              "maxw": "min(100%, 524px)",
-              "tag": "System B"
+              "maxw": "min(100%, 524px)"
             }
           ]
         },
@@ -241,7 +242,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/pokerstars-payments/05.webp",
+              "src": "/images/pokerstars-payments/06.webp",
               "w": 1440,
               "h": 1171,
               "alt": "Desktop transaction history design with filters and sorting above the list",
@@ -256,7 +257,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/pokerstars-payments/06.webp",
+              "src": "/images/pokerstars-payments/07.webp",
               "w": 998,
               "h": 680,
               "alt": "Mobile transaction history on a phone, with the sort options Newest first and Oldest first open",
@@ -271,34 +272,31 @@
           "layout": "three",
           "images": [
             {
-              "src": "/images/pokerstars-payments/07.webp",
+              "src": "/images/pokerstars-payments/08.webp",
               "w": 721,
               "h": 2636,
               "alt": "Mobile transaction history list with filter, sort and export controls",
               "cap": "Mobile: the transaction list, with filter, sort and export controls.",
               "zoom": true,
-              "maxw": "min(100%, 280px)",
-              "tag": "Mobile list"
+              "maxw": "min(100%, 280px)"
             },
             {
-              "src": "/images/pokerstars-payments/08.png",
+              "src": "/images/pokerstars-payments/09.png",
               "w": 360,
               "h": 1443,
               "alt": "Mobile filters screen with transaction type, payment method and date range selected",
               "cap": "Filters: transaction type, payment method and preset date ranges.",
               "zoom": false,
-              "maxw": "min(100%, 240px)",
-              "tag": "Filters"
+              "maxw": "min(100%, 240px)"
             },
             {
-              "src": "/images/pokerstars-payments/09.png",
+              "src": "/images/pokerstars-payments/10.png",
               "w": 361,
               "h": 1479,
               "alt": "Mobile filters screen with a calendar open for picking specific days",
               "cap": "Select days: pick specific days directly from the calendar.",
               "zoom": false,
-              "maxw": "min(100%, 240px)",
-              "tag": "Calendar"
+              "maxw": "min(100%, 240px)"
             }
           ]
         }
@@ -482,7 +480,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/pokerstars-payments/10.webp",
+              "src": "/images/pokerstars-payments/11.webp",
               "w": 736,
               "h": 549,
               "alt": "Prioritisation board plotting payment method management features by impact and effort",
@@ -497,7 +495,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/pokerstars-payments/11.webp",
+              "src": "/images/pokerstars-payments/12.webp",
               "w": 1300,
               "h": 769,
               "alt": "A user flow for the Cashier, built from sticky notes",
@@ -546,24 +544,22 @@
           "layout": "two",
           "images": [
             {
-              "src": "/images/pokerstars-payments/12.png",
+              "src": "/images/pokerstars-payments/13.png",
               "w": 421,
               "h": 897,
               "alt": "Wireframe of an unverified PayPal payment method with a set as preferred option and an edit button",
               "cap": "Wireframe: an unverified payment method.",
               "zoom": false,
-              "maxw": "min(100%, 240px)",
-              "tag": "Wireframe"
+              "maxw": "min(100%, 240px)"
             },
             {
-              "src": "/images/pokerstars-payments/13.png",
+              "src": "/images/pokerstars-payments/14.png",
               "w": 421,
               "h": 897,
               "alt": "Wireframe of editing a payment method, with save, cancel, verify card now and delete card actions",
               "cap": "Wireframe: editing a method. Edit and Delete were planned for later iterations.",
               "zoom": false,
-              "maxw": "min(100%, 240px)",
-              "tag": "Wireframe"
+              "maxw": "min(100%, 240px)"
             }
           ],
           "caption": "Wireframe examples exploring hierarchy and verification states."
@@ -600,27 +596,25 @@
           "layout": "three",
           "images": [
             {
-              "src": "/images/pokerstars-payments/14.png",
+              "src": "/images/pokerstars-payments/15.png",
               "w": 375,
               "h": 993,
               "alt": "Mobile Your payment method screen showing a Visa card marked Verified",
               "cap": "Card view: clear details, with a Verified status.",
               "zoom": false,
-              "maxw": "min(100%, 250px)",
-              "tag": "Card view"
+              "maxw": "min(100%, 250px)"
             },
             {
-              "src": "/images/pokerstars-payments/15.png",
+              "src": "/images/pokerstars-payments/16.png",
               "w": 375,
               "h": 1073,
               "alt": "Mobile Your payment method screen on the Transactions tab, listing recent transactions",
               "cap": "Transactions: a list for the payment method.",
               "zoom": false,
-              "maxw": "min(100%, 250px)",
-              "tag": "Transactions"
+              "maxw": "min(100%, 250px)"
             },
             {
-              "src": "/images/pokerstars-payments/16.webp",
+              "src": "/images/pokerstars-payments/17.webp",
               "w": 717,
               "h": 437,
               "alt": "Graphic showing a Visa card clearly marked as Verified, with a callout about Card Status",
@@ -635,7 +629,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/pokerstars-payments/17.webp",
+              "src": "/images/pokerstars-payments/18.webp",
               "w": 2000,
               "h": 1421,
               "alt": "Desktop Your payment method page, showing a Visa card and its details",

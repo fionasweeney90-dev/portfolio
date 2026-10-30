@@ -4,7 +4,10 @@
   "subtitle": "From one-size-fits-all emails to a more flexible, customer-focused experience.",
   "backLabel": "Back to Selected Work",
   "cover": {
-    "label": "[Add hero image: final email designs, desktop and mobile — PDF p.4]"
+    "src": "/images/irish-store-email/01.webp",
+    "w": 2000,
+    "h": 1000,
+    "alt": "Three responsive email designs for The Irish Store, shown side by side"
   },
   "info": [
     {
@@ -135,7 +138,7 @@
           "layout": "two",
           "images": [
             {
-              "src": "/images/irish-store-email/01.png",
+              "src": "/images/irish-store-email/02.png",
               "w": 1152,
               "h": 620,
               "alt": "Bar chart of device use among new users: mobile is highest, ahead of desktop or laptop and tablets",
@@ -145,7 +148,7 @@
               "tag": "New users"
             },
             {
-              "src": "/images/irish-store-email/02.png",
+              "src": "/images/irish-store-email/03.png",
               "w": 1152,
               "h": 620,
               "alt": "Bar chart of device use among existing users: mobile leads, with desktop or laptop close behind, and tablets lower",
@@ -256,7 +259,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/irish-store-email/03.webp",
+              "src": "/images/irish-store-email/04.webp",
               "w": 837,
               "h": 801,
               "alt": "Diagram of the email structure with the main content area divided into hero, product and information zones",
@@ -265,7 +268,7 @@
               "maxw": "min(100%, 560px)"
             },
             {
-              "src": "/images/irish-store-email/04.webp",
+              "src": "/images/irish-store-email/05.webp",
               "w": 2001,
               "h": 636,
               "alt": "Component A: hero layout variations in the email component library",
@@ -273,7 +276,7 @@
               "zoom": true
             },
             {
-              "src": "/images/irish-store-email/05.webp",
+              "src": "/images/irish-store-email/06.webp",
               "w": 2001,
               "h": 789,
               "alt": "Component B: product layouts in the email component library, including grid and alternating arrangements",
@@ -281,7 +284,7 @@
               "zoom": true
             },
             {
-              "src": "/images/irish-store-email/06.webp",
+              "src": "/images/irish-store-email/07.webp",
               "w": 2001,
               "h": 636,
               "alt": "Component C: information layouts in the email component library, including text-led service messages",
@@ -295,7 +298,7 @@
           "layout": "two",
           "images": [
             {
-              "src": "/images/irish-store-email/07.png",
+              "src": "/images/irish-store-email/08.png",
               "w": 600,
               "h": 912,
               "alt": "Desktop email layout using the information component, with placeholder content",
@@ -305,7 +308,7 @@
               "tag": "Desktop"
             },
             {
-              "src": "/images/irish-store-email/08.png",
+              "src": "/images/irish-store-email/09.png",
               "w": 320,
               "h": 859,
               "alt": "The same email layout on mobile at 320px, with placeholder content",
@@ -329,7 +332,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/irish-store-email/09.webp",
+              "src": "/images/irish-store-email/10.webp",
               "w": 1165,
               "h": 841,
               "alt": "Brand colour palette and typography defined for the email templates",
@@ -351,7 +354,7 @@
           "layout": "two",
           "images": [
             {
-              "src": "/images/irish-store-email/10.png",
+              "src": "/images/irish-store-email/11.png",
               "w": 600,
               "h": 1352,
               "alt": "The desktop email grid, 600px wide, shown as striped columns over a layout",
@@ -361,7 +364,7 @@
               "tag": "Desktop grid"
             },
             {
-              "src": "/images/irish-store-email/11.png",
+              "src": "/images/irish-store-email/12.png",
               "w": 320,
               "h": 1871,
               "alt": "The mobile email grid, 320px wide, shown as striped columns over a layout",

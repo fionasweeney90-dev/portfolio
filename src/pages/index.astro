@@ -4,11 +4,26 @@ import ProjectCard from '../components/ProjectCard.astro';
 import Icon from '../components/Icon.astro';
 import { projects } from '../data/projects';
 import { contact, url } from '../lib/site';
+
+// Logo heights are tuned per logo so they read at a similar visual size.
+const brands = [
+  { name: 'Paddy Power', src: '/images/home/brands/paddy-power.png', height: 44 },
+  { name: 'Betfair', src: '/images/home/brands/betfair.png', height: 26 },
+  { name: 'Sky Vegas', src: '/images/home/brands/sky-vegas.png', height: 30 },
+  { name: 'PokerStars', src: '/images/home/brands/pokerstars.png', height: 20 },
+  { name: 'The Irish Store', src: '/images/home/brands/the-irish-store.png', height: 44 },
+];
 ---
 <BaseLayout title="Fiona Sweeney · Lead Product Designer" home>
   <header id="top" class="hero">
     <h1>I like making complicated things<br /><span class="hl word">simple.</span></h1>
-    <p class="body-text intro">I've spent the last 10+ years designing digital products across e-commerce, payments and gaming. I enjoy getting stuck into tricky problems, bringing people together and creating experiences that just make sense.</p>
+    <p class="body-text intro">I've spent the last 12+ years designing digital products across e-commerce, payments and gaming. I enjoy getting stuck into tricky problems, bringing people together and creating experiences that just make sense.</p>
+    <div class="brands">
+      <p class="brands-label">Brands I’ve designed for</p>
+      <div class="brands-row">
+        {brands.map((b) => <img src={url(b.src)} alt={b.name} style={`height: ${b.height}px`} />)}
+      </div>
+    </div>
     <a class="btn" href="#work">View selected work</a>
   </header>
 
@@ -26,7 +41,7 @@ import { contact, url } from '../lib/site';
       <h2 class="eyebrow">A LITTLE ABOUT ME</h2>
       <h3 class="about-title">Hey, I’m Fiona! <span class="wave" role="img" aria-label="waving hand">👋</span></h3>
       <div class="about-body">
-        <p class="body-text">I’m a Lead Product Designer with 10+ years’ experience working across mobile, web and desktop.</p>
+        <p class="body-text">I’m a Lead Product Designer with 12+ years’ experience working across mobile, web and desktop.</p>
         <p class="body-text">I started out in agency life, moved into e-commerce, and now lead design across multiple gaming brands at Flutter. Along the way, I’ve worked across payments, marketing and core product experiences, giving me a good understanding of how products and customer journeys fit together.</p>
         <p class="body-text">I love getting people together to solve problems. Whether it’s running a workshop, sketching out ideas or challenging assumptions, I believe some of the best work comes from sharing different perspectives. I’m a big fan of face-to-face collaboration and enjoy mentoring other designers along the way.</p>
         <p class="body-text">I’m particularly interested in making complex experiences feel simple, while balancing customer needs, business goals and technical constraints.</p>
@@ -65,6 +80,28 @@ import { contact, url } from '../lib/site';
   .intro {
     margin: clamp(32px, 3vw, 40px) 0 0;
     max-width: 850px;
+  }
+  .brands {
+    margin-top: clamp(40px, 5vw, 56px);
+  }
+  .brands-label {
+    margin: 0 0 20px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .brands-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px clamp(32px, 4vw, 56px);
+  }
+  .brands-row img {
+    width: auto;
+    max-width: 100%;
+    display: block;
   }
   .btn {
     margin-top: 40px;
