@@ -6,14 +6,26 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  // Social cards (Open Graph / Twitter) fall back to title and description when not set.
+  shareTitle?: string;
+  shareDescription?: string;
+  shareType?: 'website' | 'article';
   home?: boolean;
 }
 
 const {
   title,
-  description = 'Fiona Sweeney, Lead Product Designer. 12+ years designing digital products across e-commerce, payments and gaming.',
+  description = 'Lead Product Designer with 12+ years designing digital products across e-commerce, payments and gaming. Search, payments and checkout case studies.',
+  shareTitle = title,
+  shareDescription = description,
+  shareType = 'website',
   home = false,
 } = Astro.props;
+
+// Social platforms need absolute URLs, so everything is resolved against `site` in astro.config.mjs.
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const shareImage = new URL('/share.png', Astro.site).href;
+const shareImageAlt = 'Fiona Sweeney, Lead Product Designer, with project covers for Search Revamp, PokerStars Payments and The Irish Store';
 ---
 <!doctype html>
 <html lang="en">
@@ -22,6 +34,23 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:type" content={shareType} />
+    <meta property="og:site_name" content="Fiona Sweeney" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={shareTitle} />
+    <meta property="og:description" content={shareDescription} />
+    <meta property="og:image" content={shareImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={shareImageAlt} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={shareTitle} />
+    <meta name="twitter:description" content={shareDescription} />
+    <meta name="twitter:image" content={shareImage} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
