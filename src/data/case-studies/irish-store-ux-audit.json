@@ -4,7 +4,10 @@
   "subtitle": "Finding the friction in the shopping experience — and making meaningful improvements.",
   "backLabel": "Back to Selected Work",
   "cover": {
-    "label": "[Add cover image — suggest the updated checkout, PDF p.7]"
+    "src": "/images/irish-store-ux-audit/01.webp",
+    "w": 2000,
+    "h": 1000,
+    "alt": "The Irish Store checkout on desktop and mobile search results on a phone"
   },
   "info": [
     {
@@ -129,7 +132,7 @@
           "layout": "two",
           "images": [
             {
-              "src": "/images/irish-store-ux-audit/01.png",
+              "src": "/images/irish-store-ux-audit/02.png",
               "w": 591,
               "h": 507,
               "alt": "Donut chart: 97.45% of survey respondents said yes and 2.55% said no to finding everything they were looking for",
@@ -138,7 +141,7 @@
               "maxw": "min(100%, 591px)"
             },
             {
-              "src": "/images/irish-store-ux-audit/02.png",
+              "src": "/images/irish-store-ux-audit/03.png",
               "w": 759,
               "h": 580,
               "alt": "Bar chart of preferred payment methods, led by credit or debit card and then PayPal",
@@ -207,7 +210,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/irish-store-ux-audit/03.webp",
+              "src": "/images/irish-store-ux-audit/04.webp",
               "w": 2400,
               "h": 1312,
               "alt": "Synthesis boards from the user tests on mobile, desktop and tablet, grouped into says, thinks, does and feels",
@@ -221,7 +224,7 @@
           "layout": "split",
           "images": [
             {
-              "src": "/images/irish-store-ux-audit/04.webp",
+              "src": "/images/irish-store-ux-audit/05.webp",
               "w": 1690,
               "h": 1697,
               "alt": "Board of customer needs: two cohorts, and what people consider when shopping for clothes",
@@ -245,7 +248,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/irish-store-ux-audit/05.webp",
+              "src": "/images/irish-store-ux-audit/06.webp",
               "w": 2345,
               "h": 2305,
               "alt": "Empathy map of what users say, think, do and feel, built from user tests and the UX survey",
@@ -382,7 +385,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/irish-store-ux-audit/06.webp",
+              "src": "/images/irish-store-ux-audit/07.webp",
               "w": 2400,
               "h": 2211,
               "alt": "Prioritisation matrix plotting recommendations by priority and effort, colour-coded by CX pillar",
@@ -404,7 +407,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/irish-store-ux-audit/07.webp",
+              "src": "/images/irish-store-ux-audit/08.webp",
               "w": 873,
               "h": 602,
               "alt": "The “My Quick Wins” board with the quick wins chosen in the prioritisation session",
@@ -453,7 +456,7 @@
           "layout": "ba",
           "images": [
             {
-              "src": "/images/irish-store-ux-audit/08.png",
+              "src": "/images/irish-store-ux-audit/09.png",
               "w": 324,
               "h": 611,
               "alt": "The original checkout order summary and secure payment area",
@@ -462,7 +465,7 @@
               "maxw": "min(100%, 324px)"
             },
             {
-              "src": "/images/irish-store-ux-audit/09.webp",
+              "src": "/images/irish-store-ux-audit/10.webp",
               "w": 1920,
               "h": 2306,
               "alt": "The updated checkout page with accepted card images in the payment area",
@@ -498,7 +501,7 @@
           "layout": "two",
           "images": [
             {
-              "src": "/images/irish-store-ux-audit/10.webp",
+              "src": "/images/irish-store-ux-audit/11.webp",
               "w": 1408,
               "h": 874,
               "alt": "A product size chart with a How to Measure guide alongside it",
@@ -506,7 +509,7 @@
               "zoom": true
             },
             {
-              "src": "/images/irish-store-ux-audit/11.webp",
+              "src": "/images/irish-store-ux-audit/12.webp",
               "w": 1408,
               "h": 1014,
               "alt": "A ring size guide with step-by-step measuring instructions",
@@ -527,7 +530,7 @@
           "layout": "full",
           "images": [
             {
-              "src": "/images/irish-store-ux-audit/12.webp",
+              "src": "/images/irish-store-ux-audit/13.webp",
               "w": 1920,
               "h": 1838,
               "alt": "One of the explored search layouts, showing search suggestions and product results over the homepage",
