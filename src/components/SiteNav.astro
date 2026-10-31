@@ -15,9 +15,9 @@ const to = (hash: string) => (home ? hash : url('/') + hash);
     <p class="role">Lead Product Designer</p>
   </div>
   <div class="links">
-    <a class="nv" href={to('#work')}>Work</a>
-    <a class="nv" href={to('#about')}>About</a>
-    <a class="nv" href="#contact">Contact</a>
+    <a class="nv pill" href={to('#work')} style="--pill: var(--pink)"><span>Work</span></a>
+    <a class="nv pill" href={to('#about')} style="--pill: var(--blue)"><span>About</span></a>
+    <a class="nv pill" href="#contact" style="--pill: var(--green)"><span>Contact</span></a>
   </div>
 </nav>
 
@@ -49,6 +49,28 @@ const to = (hash: string) => (home ? hash : url('/') + hash);
     font-size: clamp(15px, 1.1vw, 16px);
     font-weight: 400;
     color: var(--muted);
+  }
+  /* Nav links get a coloured box on hover, like the "simple." highlight. The negative margin
+     keeps the box from shifting the layout. */
+  .pill span {
+    display: inline-block;
+    padding: 0.146em 0.25em;
+    margin: -0.146em -0.25em;
+    border-radius: 0.167em;
+    transition: background-color 0.2s ease;
+  }
+  .pill:hover,
+  .pill:focus-visible {
+    color: var(--ink);
+  }
+  .pill:hover span,
+  .pill:focus-visible span {
+    background-color: var(--pill);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pill span {
+      transition: none;
+    }
   }
   .links {
     display: flex;
