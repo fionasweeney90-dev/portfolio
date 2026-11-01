@@ -1,0 +1,25 @@
+---
+// A standalone case study page from the design canvas: its designed content (an HTML fragment in
+// src/data/case-studies-v2/) inside the site layout, styled by case-study-v2.css.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { accentFor } from '../../lib/site';
+import { projects } from '../../data/projects';
+import meta from '../../data/case-studies-v2/meta.json';
+import '../../styles/case-study-v2.css';
+
+interface Props {
+  slug: keyof typeof meta;
+}
+
+const { slug } = Astro.props;
+const page = meta[slug];
+const pages = import.meta.glob<string>('../../data/case-studies-v2/*.html', { eager: true, query: '?raw', import: 'default' });
+const html = pages[`../../data/case-studies-v2/${slug}.html`];
+const card = projects.find((p) => p.slug === slug);
+const title = `${card?.title ?? page.title} – Fiona Sweeney`;
+---
+<BaseLayout title={title} description={page.description} shareType="article">
+  <div class:list={['v2', `acc-${accentFor(card?.company ?? '')}`, { 'plain-frames': page.plainFrames }]}>
+    <div class="wrap" set:html={html} />
+  </div>
+</BaseLayout>
