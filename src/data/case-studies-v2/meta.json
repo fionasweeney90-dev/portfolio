@@ -1,0 +1,26 @@
+{
+  "search-revamp": {
+    "title": "Search Revamp – Flutter UK&I",
+    "description": "Leading a cross-brand redesign of Search, starting with the fundamentals (speed, accuracy and consistency) before adding new features.",
+    "accent": "#FA5B8C",
+    "plainFrames": false
+  },
+  "pokerstars-payments": {
+    "title": "Payments Experience – PokerStars",
+    "description": "Two payments projects showing two sides of my role: hands-on, evidence-led design in one, and design direction and mentoring in the other.",
+    "accent": "#5CC8D5",
+    "plainFrames": true
+  },
+  "irish-store-ux-audit": {
+    "title": "UX Audit & Improvements – The Irish Store",
+    "description": "A research-led audit of a fast-growing e-commerce site, focused on quick, high-impact fixes rather than a full redesign.",
+    "accent": "#BAE651",
+    "plainFrames": false
+  },
+  "irish-store-email": {
+    "title": "Responsive Email Design – The Irish Store",
+    "description": "Replacing a one-size-fits-all email with a modular, responsive system, designed and coded end to end.",
+    "accent": "#BAE651",
+    "plainFrames": false
+  }
+}

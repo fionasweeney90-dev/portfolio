@@ -22,7 +22,17 @@ Then open http://localhost:4321/.
 | Colours, type, shared styles | `src/styles/global.css`, `src/styles/case-study.css` |
 | Images | `public/images/` |
 
-### Editing a case study
+### Designed case studies
+
+Search Revamp, PokerStars Payments, Irish Store UX Audit and Irish Store Email are built from the
+design canvas: each page's content is an HTML fragment in `src/data/case-studies-v2/<slug>.html`,
+rendered by `src/components/case-study/CaseStudyV2.astro` with the shared styles in
+`src/styles/case-study-v2.css` (all scoped under `.v2`). Images are in `public/images/work/<slug>/`.
+The page's accent colour follows the company, as on the home page cards.
+
+### Editing a template case study
+
+The remaining (draft) case studies use the JSON template described below.
 
 Each case study is a list of sections, and each section is a list of blocks. Block types:
 `text`, `list`, `cards`, `callout`, `facts`, `team`, `timeline`, `findings`, `code` and `gallery`
